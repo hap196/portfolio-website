@@ -4,25 +4,47 @@ import ProfilePic from "../assets/profile_pic.jpg";
 const About = () => {
   return (
     <div className="w-screen h-screen flex items-center justify-center bg-lighter-blue dark:bg-navy">
-      <div className="text-center max-w-4xl mx-10 w-full px-4">
-        <h2 className="text-black text-4xl font-bold text-white dark:text-off-white mb-8">About Me</h2>
+      <div className="text-center max-w-6xl mx-4 w-full px-4">
+        <h2 className="text-black text-4xl font-bold text-white dark:text-off-white mb-8">
+          About Me
+        </h2>
         <div className="flex flex-col md:flex-row items-center justify-around gap-8">
           <div className="text-navy dark:text-light-blue text-xl text-left">
             <p className="py-2 ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur.
+              Since my first high school webdev class, I've been an avid web,{" "}
+              <a
+                href="https://www.congressionalappchallenge.us/21-va11/"
+                className="underline underline-offset-4 text-brighter-coral dark:text-coral"
+              >
+                mobile
+              </a>{" "}
+              and AI developer. With a background in computational biology, I've
+              also grown to be fascinated with healthcare tech. However, my interests
+              go far beyond just this field, and what I'm most passionate
+              about is creating products that solve problems for both users and
+              the world.
+              <br />
+              <br />
+              Outside of programming, I enjoy leadership, and have held such
+              roles as a part of Woodson Science Olympiad, Computer Science
+              Honor Society, and IT Girls.
             </p>
             <p className="py-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur.
+              <span className="underline underline-offset-4">Currently...</span>
+              <br />
+              <br />
+              <b>• Learning</b> Next.js
+              <br />
+              <br />
+              <b>• Picking up</b> figure skating
+              <br />
+              <br />
+              <b>• Listening to</b>
+              <i> Eastside</i> by Lyn Lapid
+              <br />
+              <br />
+              <b>• Spending time</b> geocaching, growing plants, running, and
+              trying new Boston-area restaurants
             </p>
           </div>
           <img

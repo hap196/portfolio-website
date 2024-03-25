@@ -17,12 +17,15 @@ const AtlasUROP = () => {
         </h3>
         <div className="p-4 my-3 max-w-lg rounded-md shadow-lg shadow-black bg-light-blue-2 dark:bg-dark-blue">
           <p className="text-lg lg:text-left text-navy dark:text-light-blue">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
+            A web application that visualizes supply chain data for the
+            Orthotics & Prosthetics (O&P) sector, primarily in Sierra Leone.
+            Donors leverage the app to track and manage inventory of prosthetics
+            supplies distributed to ensure that Sierra Leone healthcare clinics'
+            needs are met. Conducted under the{" "}
+            <a href="https://www.media.mit.edu/projects/sierra-leone-prosthetics-orthotics/overview/" className="underline underline-offset-4 text-brighter-coral dark:text-coral">
+              Media Lab
+            </a>
+            .
           </p>
         </div>
         <div className="flex flex-wrap justify-start space-x-2 text-md font-semibold text-navy dark:text-light-blue">
@@ -35,17 +38,17 @@ const AtlasUROP = () => {
           <a
             href="https://github.com"
             target="_blank"
-            className="hover:text-gray-300"
+            className="hover:text-brighter-coral dark:hover:text-coral"
           >
             <FaGithub />
           </a>
-          <a
+          {/* <a
             href="https://liveprojectlink.com"
             target="_blank"
-            className="hover:text-gray-300"
+            className="hover:text-brighter-coral dark:hover:text-coral"
           >
             <FaExternalLinkAlt />
-          </a>
+          </a> */}
         </div>
       </div>
       <img

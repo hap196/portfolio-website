@@ -5,8 +5,7 @@ const ProjectGallery = () => {
   const projects = [
     {
       title: "Folio Landing Page",
-      description:
-        "Building a custom multisite compatible WordPress plugin to build,global search with Algolia.",
+      description: "Simple website to introduce my startup.",
       techStack: ["React", "Tailwind", "HTML"],
       githubLink: "https://github.com/hap196/folio-landing-page",
       liveLink: "https://folio-ai-website.vercel.app/",
@@ -14,15 +13,15 @@ const ProjectGallery = () => {
     {
       title: "Flood Vulnerability Prediction",
       description:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "An ML model to identify regions highly vulnerable to flooding based on geographic features.",
       techStack: ["Scikit-learn", "Tensorflow", "ArcGIS"],
       githubLink: "https://github.com/flood-prediction",
-      liveLink: "",
+      liveLink: "../../public/flood-prediction.pdf",
     },
     {
       title: "Personal Website",
       description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "All about me!",
       techStack: ["React", "Tailwind", "HTML"],
       githubLink: "https://github.com/hap196/personal-website",
       liveLink: "https://hpan.dev",
@@ -30,15 +29,22 @@ const ProjectGallery = () => {
     {
       title: "Folio Full-Stack Website (Coming Soon!)",
       description:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      techStack: ["React", "Express.js", "MongoDB", "Node.js", "Firebase", "Tailwind"],
+        "Desktop version for the complementary Folio app.",
+      techStack: [
+        "React",
+        "Express.js",
+        "MongoDB",
+        "Node.js",
+        "Firebase",
+        "Tailwind",
+      ],
       githubLink: "https://github.com/hap196/folio-website",
       liveLink: "",
     },
     {
       title: "StockX Price Predictor (Coming Soon!)",
       description:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "AI model to predict StockX product prices using time series analysis and clustering algorithms.",
       techStack: ["Python", "Scikit-learn", "Tensorflow"],
       githubLink: "https://github.com/hap196/aim-labs-2024",
       liveLink: "",

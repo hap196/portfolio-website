@@ -19,12 +19,11 @@ const Folio = () => {
             </h3>
             <div className="bg-light-blue-2 dark:bg-dark-blue p-4 my-3 max-w-lg rounded-md shadow-lg shadow-black">
               <p className="text-lg text-navy dark:text-light-blue">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
+                A personalized and accessible AI-powered college advisor aimed
+                at helping high school students navigate the competitive college
+                admissions process. The app focuses on developing their
+                portfolios – the culmination of their courses, extracurriculars,
+                and awards - to maximize their academic potential.
               </p>
             </div>
             <div className="flex justify-center lg:justify-end space-x-2 mt-4 text-md font-semibold text-navy dark:text-light-blue">
@@ -34,16 +33,16 @@ const Folio = () => {
             </div>
             <div className="flex justify-center lg:justify-end space-x-5 text-xl mt-4 text-navy dark:text-light-blue">
               <a
-                href="https://github.com"
+                href="https://github.com/hap196/folio-app"
                 target="_blank"
-                className="hover:text-gray-300"
+                className="hover:text-brighter-coral dark:hover:text-coral"
               >
                 <FaGithub />
               </a>
               <a
-                href="https://liveprojectlink.com"
+                href="https://youtu.be/nptzYukaxPo"
                 target="_blank"
-                className="hover:text-gray-300"
+                className="hover:text-brighter-coral dark:hover:text-coral"
               >
                 <FaExternalLinkAlt />
               </a>
