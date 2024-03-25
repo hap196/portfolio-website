@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ /*Button slide animation*/
+.btn-slide-fill {
+    background: linear-gradient(to right, #F76C6C 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-in-out;
+    color: #F76C6C
+  }
+  
+  .btn-slide-fill:hover {
+    background-position: left bottom;
+    color: #0D1639
+  }
+
+  /*For about me image border*/
+  .shadow-offset-coral {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 15px 15px 0px #F76C6C;
+  }
+  
+  .shadow-offset-coral:hover {
+    box-shadow: 25px 25px 0px #F76C6C;
+    transform: translate(-10px, -10px);
+  }
+  
+  /*For light/dark mode toggle */
+  .icon-rotate {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .dark-mode-active {
+    transform: rotate(180deg);
+  }
+  
