@@ -2,37 +2,98 @@
 @tailwind components;
 @tailwind utilities;
 
- /*Button slide animation*/
+/*Button slide animation*/
 .btn-slide-fill {
-    background: linear-gradient(to right, #F76C6C 50%, transparent 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: background-position 0.5s ease-in-out;
-    color: #F76C6C
-  }
-  
-  .btn-slide-fill:hover {
-    background-position: left bottom;
-    color: #0D1639
-  }
+  background: linear-gradient(to right, #f76c6c 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.5s ease-in-out;
+  color: #f76c6c;
+}
 
-  /*For about me image border*/
-  .shadow-offset-coral {
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-    box-shadow: 15px 15px 0px #F76C6C;
+.btn-slide-fill:hover {
+  background-position: left bottom;
+  color: #0d1639;
+}
+
+/*For about me image border*/
+.shadow-offset-coral {
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  box-shadow: 15px 15px 0px #f76c6c;
+}
+
+.shadow-offset-coral:hover {
+  box-shadow: 25px 25px 0px #f76c6c;
+  transform: translate(-10px, -10px);
+}
+
+/*For light/dark mode toggle */
+.icon-rotate {
+  transition: transform 0.2s ease-in-out;
+}
+
+.dark-mode-active {
+  transform: rotate(180deg);
+}
+
+/*CSS floating animations */
+@keyframes floatDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
   }
-  
-  .shadow-offset-coral:hover {
-    box-shadow: 25px 25px 0px #F76C6C;
-    transform: translate(-10px, -10px);
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  /*For light/dark mode toggle */
-  .icon-rotate {
-    transition: transform 0.2s ease-in-out;
+}
+
+.float-down {
+  animation: floatDown 1s ease forwards;
+}
+
+.float-up {
+  opacity: 0;
+  animation: floatUp 0.8s ease-out forwards;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
   }
-  
-  .dark-mode-active {
-    transform: rotate(180deg);
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
+}
+
+.float-up-delay-1 {
+  animation-delay: 0.5s;
+}
+.float-up-delay-2 {
+  animation-delay: 0.4s;
+}
+.float-up-delay-3 {
+  animation-delay: 0.6s;
+}
+.float-up-delay-4 {
+  animation-delay: 0.8s;
+}
+.float-up-delay-5 {
+  animation-delay: 1s;
+}
+.float-up-delay-6 {
+  animation-delay: 2s;
+}
+
+@keyframes flyInFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -18,10 +18,8 @@ const Home = () => {
     };
 
     if (!isDeleting && currentText === fullWord) {
-      // Word fully typed, wait before deleting
       setTimeout(() => setIsDeleting(true), 2000);
     } else if (isDeleting && currentText === '') {
-      // Word fully deleted, move to next word
       setIsDeleting(false);
       setIndex(currentIndex + 1);
     } else {
@@ -33,15 +31,15 @@ const Home = () => {
     <div className="h-screen w-screen bg-lighter-blue dark:bg-navy flex justify-center items-center p-4">
       <div className="flex flex-col justify-center h-full w-full text-left max-w-7xl mx-10 lg:mx-28">
         <div>
-          <h5 className="text-2xl text-brighter-coral dark:text-coral pb-4">Hey! My name is</h5>
-          <h1 className="text-6xl md:text-8xl font-bold text-black dark:text-off-white py-2">
+          <h5 className="text-2xl text-brighter-coral dark:text-coral pb-4 float-up float-up-delay-1">Hey! My name is</h5>
+          <h1 className="text-6xl md:text-8xl font-bold text-black dark:text-off-white py-2 float-up float-up-delay-2">
             Hailey Pan.
           </h1>
-          <h2 className="text-6xl md:text-8xl font-bold text-darker-blue dark:text-light-blue py-2">
+          <h2 className="text-6xl md:text-8xl font-bold text-darker-blue dark:text-light-blue py-2 float-up float-up-delay-3">
             I build {currentText}
             <span className="blink-cursor w-48">|</span>
           </h2>
-          <p className="text-xl md:text-2xl mt-8 md:mt-14 text-darker-blue dark:text-light-blue w-full md:w-3/5">
+          <p className="text-xl md:text-2xl mt-8 md:mt-14 text-darker-blue dark:text-light-blue w-full md:w-3/5 float-up float-up-delay-4">
             Thanks for checking out my website! I'm a computer science student
             at MIT excited about using software and AI to tackle issues in&nbsp;
             <a
@@ -65,13 +63,14 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="relative overflow-hidden dark:bg-navy mt-10 text-xl font-bold px-6 py-4 rounded-lg border-2 border-coral shadow-md shadow-coral/50 transition duration-300 ease-in-out btn-slide-fill">
+            <button className="relative overflow-hidden dark:bg-navy mt-10 text-xl font-bold px-6 py-4 rounded-lg border-2 border-coral shadow-md shadow-coral/50 transition duration-300 ease-in-out btn-slide-fill float-up float-up-delay-5">
               Check out my Github!
             </button>
           </a>
         </div>
       </div>
     </div>
+
   );
 };
 

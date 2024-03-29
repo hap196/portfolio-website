@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import FolioLandingImage from "../assets/foliolandingpage.png";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import "../index.css"
 
 const Folio = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const aboutRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    if (aboutRef.current) {
+      observer.observe(aboutRef.current);
+    }
+
+    return () => {
+      if (aboutRef.current) {
+        observer.unobserve(aboutRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div
       className="flex flex-col lg:flex-row relative items-center lg:mx-auto px-10"
@@ -17,7 +45,11 @@ const Folio = () => {
             <h3 className="font-bold text-3xl pb-2 text-black dark:text-off-white">
               Folio
             </h3>
-            <div className="bg-light-blue-2 dark:bg-dark-blue p-4 my-3 max-w-lg rounded-md shadow-lg shadow-black">
+            <div
+              className={`bg-light-blue-2 dark:bg-dark-blue p-4 my-3 max-w-lg rounded-md shadow-lg shadow-black transition-opacity duration-700 ${
+                isVisible ? "animate-flyInFromBottom" : ""
+              }`}
+            >
               <p className="text-lg text-navy dark:text-light-blue">
                 A personalized and accessible AI-powered college advisor aimed
                 at helping high school students navigate the competitive college

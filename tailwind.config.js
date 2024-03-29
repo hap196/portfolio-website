@@ -18,6 +18,12 @@ export default {
       'darker-blue': '#1B2545',
       'lighter-blue':'#ebf1fc',
     },
+    animation: {
+      flyInFromTop: 'flyInFromTop 1s ease-out forwards',
+      flyInFromBottom: 'flyInFromBottom 1s ease-out forwards',
+      flyInFromRight: 'flyInFromRight 1s ease-out forwards',
+      flyInFromBottomLeft: 'flyInFromBottomLeft 1s ease-out forwards',
+    },
   },
   plugins: [],
 };

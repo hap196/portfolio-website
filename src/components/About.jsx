@@ -1,16 +1,52 @@
-import React from "react";
+
+import React, { useEffect, useState, useRef } from "react";
 import ProfilePic from "../assets/profile_pic.jpg";
+import "../index.css"
 
 const About = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const aboutRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    if (aboutRef.current) {
+      observer.observe(aboutRef.current);
+    }
+
+    return () => {
+      if (aboutRef.current) {
+        observer.unobserve(aboutRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="w-screen h-screen flex items-center justify-center bg-lighter-blue dark:bg-navy">
+    <div
+      className="w-screen h-screen flex items-center justify-center bg-lighter-blue dark:bg-navy"
+      ref={aboutRef}
+    >
       <div className="text-center max-w-6xl mx-4 w-full px-4">
-        <h2 className="text-black text-4xl font-bold text-white dark:text-off-white mb-8">
+        <h2 className={`text-black text-4xl font-bold text-white dark:text-off-white mb-8 transition-opacity duration-700 ${
+            isVisible ? "opacity-100" : "opacity-0"
+          }`}>
           About Me
         </h2>
         <div className="flex flex-col md:flex-row items-center justify-around gap-8">
-          <div className="text-navy dark:text-light-blue text-xl text-left">
-            <p className="py-2 ">
+          <div className={`text-navy dark:text-light-blue text-xl text-left transition-opacity duration-700 ${
+              isVisible ? "animate-flyInFromBottom" : ""
+            }`}>
+           <p className="py-2 ">
               Since my first high school webdev class, I've been an avid web,{" "}
               <a
                 href="https://www.congressionalappchallenge.us/21-va11/"
@@ -50,7 +86,9 @@ const About = () => {
           <img
             src={ProfilePic}
             alt="Profile"
-            className="rounded max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg shadow-offset-coral"
+            className={`rounded max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg shadow-offset-coral transition-opacity duration-700 ${
+              isVisible ? "animate-flyInFromBottom" : ""
+            }`}
           />
         </div>
       </div>
