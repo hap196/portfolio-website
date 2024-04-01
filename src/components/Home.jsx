@@ -28,7 +28,7 @@ const Home = () => {
   }, [currentText, index, isDeleting, words]);
 
   return (
-    <div className="h-screen w-screen bg-lighter-blue dark:bg-navy flex justify-center items-center p-4">
+    <div className="h-screen w-screen bg-lighter-blue dark:bg-navy flex justify-center items-center p-4" id="home">
       <div className="flex flex-col justify-center h-full w-full text-left max-w-7xl mx-10 lg:mx-28">
         <div>
           <h5 className="text-2xl text-brighter-coral dark:text-coral pb-4 float-up float-up-delay-1">Hey! My name is</h5>

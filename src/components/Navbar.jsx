@@ -33,22 +33,22 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 sm:px-10 md:px-10 lg:px-20 xl:px-20 w-full z-20 flex justify-between items-center px-10 py-4 text-xl dark:text-light-blue text-navy bg-lighter-blue dark:bg-navy">
       <div className="py-2">
-        <a href="/home" className="nav-title py-2 hover:text-brighter-coral dark:hover:text-coral">
+        <a href="#home" className="nav-title py-2 hover:text-brighter-coral dark:hover:text-coral">
           Home
         </a>
       </div>
       <div className="flex justify-end px-4 py-2 items-center">
         <div className="hidden md:flex">
-          <a href="/about" className="float-down px-4 py-2 dark:bg-blue-500 hover:text-brighter-coral dark:hover:text-coral">
+          <a href="#about" className="float-down px-4 py-2 dark:bg-blue-500 hover:text-brighter-coral dark:hover:text-coral">
             About
           </a>
-          <a href="/skills" className="float-down px-4 py-2 hover:text-brighter-coral dark:hover:text-coral">
+          {/* <a href="#skills" className="float-down px-4 py-2 hover:text-brighter-coral dark:hover:text-coral">
             Skills
-          </a>
-          <a href="/projects" className="float-down px-4 py-2 hover:text-brighter-coral dark:hover:text-coral">
+          </a> */}
+          <a href="#projects" className="float-down px-4 py-2 hover:text-brighter-coral dark:hover:text-coral">
             Projects
           </a>
-          <a href="/contact" className="float-down px-4 py-2 hover:text-brighter-coral dark:hover:text-coral">
+          <a href="#contact" className="float-down px-4 py-2 hover:text-brighter-coral dark:hover:text-coral">
             Contact
           </a>
           <button onClick={toggleTheme} className="float-down ml-4 hover:text-brighter-coral dark:hover:text-coral icon-spin">

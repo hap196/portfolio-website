@@ -33,7 +33,7 @@ const About = () => {
 
   return (
     <div
-      className="w-screen h-screen flex items-center justify-center bg-lighter-blue dark:bg-navy"
+      className="w-screen h-screen flex items-center justify-center bg-lighter-blue dark:bg-navy" id="about"
       ref={aboutRef}
     >
       <div className="text-center max-w-6xl mx-4 w-full px-4">
