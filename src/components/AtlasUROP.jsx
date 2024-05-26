@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import FolioLandingImage from "../assets/foliolandingpage.png";
+import AtlasImage from "../assets/atlas.png";
 
 const AtlasUROP = () => {
   return (
@@ -52,7 +52,7 @@ const AtlasUROP = () => {
         </div>
       </div>
       <img
-        src={FolioLandingImage}
+        src={AtlasImage}
         alt="Chat View"
         className="rounded-xl z-0 lg:ml-auto w-full"
         style={{ maxWidth: "70%", maxHeight: "800px", height: "auto" }}
