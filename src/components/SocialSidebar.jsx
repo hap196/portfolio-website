@@ -9,14 +9,14 @@ const SocialSidebar = () => {
         target="_blank"
         className="text-white hover:text-brighter-coral coraldark:hover:text-coral mb-6"
       >
-        <FaGithub size="1.5em" />
+        <FaGithub size="1.25em" />
       </a>
       <a
         href="https://linkedin.com/in/haileypan"
         target="_blank"
         className="text-white hover:text-brighter-coral dark:hover:text-coral mb-6"
       >
-        <FaLinkedin size="1.5em" />
+        <FaLinkedin size="1.25em" />
       </a>
       {/* <a
         href="https://www.instagram.com/hailey.pan/"
@@ -30,7 +30,7 @@ const SocialSidebar = () => {
         target="_blank"
         className="text-white hover:text-brighter-coral dark:hover:text-coral"
       >
-        <FaSpotify size="1.5em" />
+        <FaSpotify size="1.25em" />
       </a>
     </div>
   );
