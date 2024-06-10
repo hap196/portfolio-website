@@ -52,7 +52,7 @@ const ProjectGallery = () => {
   ];
 
   return (
-    <div className="px-10 max-w-7xl mx-auto">
+    <div className="px-10 max-w-7xl">
       <h2 className="text-white dark:text-off-white text-center text-4xl font-bold mb-12">
         Other Projects
       </h2>

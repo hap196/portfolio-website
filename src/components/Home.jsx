@@ -35,10 +35,10 @@ const Home = () => {
 
   return (
     <div
-      className="h-screen w-screen bg-lighter-blue dark:bg-navy flex justify-center items-center p-4"
+      className="min-h-screen w-screen bg-lighter-blue dark:bg-navy flex justify-center items-center py-20 px-10"
       id="home"
     >
-      <div className="flex flex-col justify-center h-full w-full text-left max-w-7xl mx-10 lg:mx-28">
+      <div className="flex flex-col justify-center h-full w-full text-left max-w-7xl px-4 lg:mx-28">
         <div>
           <h5 className="text-2xl text-brighter-coral dark:text-coral pb-4 float-up float-up-delay-1">
             Hey! My name is
@@ -55,13 +55,15 @@ const Home = () => {
             and AI to create tools that improve our everyday lives. I've
             previously developed for fields such as healthcare, education, and
             environmental engineering, and am continuing to explore these
-            applications through internships and  <a
+            applications through internships and{" "}
+            <a
               href="#projects"
               className="text-brighter-coral dark:text-coral underline underline-offset-8 dark:hover:text-dark-coral"
             >
               personal projects
-            </a>. I'm also
-            very interested in entrepreneurship and recently co-founded a&nbsp;
+            </a>
+            . I'm also very interested in entrepreneurship and recently
+            co-founded a&nbsp;
             <a
               href="https://folio-ai-website.vercel.app/"
               className="text-brighter-coral dark:text-coral underline underline-offset-8 dark:hover:text-dark-coral"

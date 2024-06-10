@@ -142,7 +142,7 @@ const skills = {
 
 const Skills = () => {
   return (
-    <div className="w-screen min-h-screen flex flex-col items-center justify-center bg-lighter-blue dark:bg-navy py-32" id="skills">
+    <div className="w-screen min-h-screen flex flex-col items-center justify-center bg-lighter-blue dark:bg-navy py-20 lg:py-32 px-10" id="skills">
       <h2 className="text-4xl font-bold text-black dark:text-off-white mb-8 transition-opacity duration-700">Skills</h2>
       {Object.entries(skills).map(([category, skills]) => (
         <div key={category} className="mb-8 w-full max-w-6xl">

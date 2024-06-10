@@ -32,11 +32,11 @@ const About = () => {
 
   return (
     <div
-      className="w-screen h-screen flex items-center justify-center bg-lighter-blue dark:bg-navy py-32"
+      className="min-h-screen w-screen flex items-center justify-center bg-lighter-blue dark:bg-navy py-20 px-10"
       id="about"
       ref={aboutRef}
     >
-      <div className="text-center max-w-6xl mx-4 w-full px-4">
+      <div className="text-center max-w-6xl w-full px-4">
         <h2
           className={`text-black text-4xl font-bold text-white dark:text-off-white mb-8 transition-opacity duration-700 ${
             isVisible ? "opacity-100" : "opacity-0"
@@ -62,19 +62,20 @@ const About = () => {
               and AI developer. Though I started in computational biology
               research, I've grown to love software development. I started out
               by creating simple tools for healthcare clinics, then expanded to
-              create all kinds of applications that aimed to solve other problems I
-              saw (check them out below!!).
+              create all kinds of applications that aimed to solve other
+              problems I saw (check them out below!!).
               <br />
               <br />
-              Outside of programming, I enjoy leadership and LOVE working in a team, and have held such
-              roles as a part of <a
+              Outside of programming, I enjoy leadership and LOVE working in a
+              team, and have held such roles as a part of{" "}
+              <a
                 href="https://woodsonscioly.org/"
                 className="underline underline-offset-4 text-brighter-coral dark:text-coral"
                 target="_blank"
               >
                 Science Olympiad
-              </a>, Computer Science
-              Honor Society, and IT Girls club.
+              </a>
+              , Computer Science Honor Society, and IT Girls club.
             </p>
             <p className="py-2">
               <span className="underline underline-offset-4">Currently...</span>
@@ -90,8 +91,8 @@ const About = () => {
               <i> Eastside</i> by Lyn Lapid
               <br />
               <br />
-              <b>• Spending time</b> geocaching🪨, growing plants🪴, running🏃‍♀️, and
-              eating Chipotle Burritos🌯
+              <b>• Spending time</b> geocaching🪨, growing plants🪴, running🏃‍♀️,
+              and eating Chipotle Burritos🌯
             </p>
           </div>
           <img
