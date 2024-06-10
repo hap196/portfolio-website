@@ -42,9 +42,12 @@ const Navbar = () => {
           <a href="#about" className="float-down px-4 py-2 dark:bg-blue-500 hover:text-brighter-coral dark:hover:text-coral">
             About
           </a>
-          {/* <a href="#skills" className="float-down px-4 py-2 hover:text-brighter-coral dark:hover:text-coral">
+          <a href="#skills" className="float-down px-4 py-2 hover:text-brighter-coral dark:hover:text-coral">
             Skills
-          </a> */}
+          </a>
+          <a href="#experience" className="float-down px-4 py-2 hover:text-brighter-coral dark:hover:text-coral">
+            Experience
+          </a>
           <a href="#projects" className="float-down px-4 py-2 hover:text-brighter-coral dark:hover:text-coral">
             Projects
           </a>
