@@ -5,18 +5,17 @@ import AtlasImage from "../assets/atlas.png";
 const AtlasUROP = () => {
   return (
     <div
-      className="flex flex-col lg:flex-row items-center mx-auto px-10"
-      style={{ maxWidth: "1200px" }}
+      className="flex flex-col lg:flex-row items-center mx-auto px-10 max-w-5xl"
     >
       <div className="w-full flex flex-col items-center justify-center mb-10 lg:w-auto lg:items-start lg:mb-3 lg:absolute left-1/2 transform translate-x-0 md:left-auto lg:pr-72 z-10">
         <h3 className="text-left font-semibold text-lg pb-2 text-brighter-coral dark:text-coral">
           Featured Project
         </h3>
-        <h3 className="text-left font-bold text-3xl text-black dark:text-off-white pb-2">
+        <h3 className="text-left font-bold text-2xl text-black dark:text-off-white pb-2">
           Atlas
         </h3>
         <div className="p-4 my-3 max-w-lg rounded-md shadow-lg shadow-black bg-light-blue-2 dark:bg-dark-blue">
-          <p className="text-lg lg:text-left text-navy dark:text-light-blue">
+          <p className="text-md lg:text-left text-navy dark:text-light-blue">
             A web application that visualizes supply chain data for the
             Orthotics & Prosthetics (O&P) sector, primarily in Sierra Leone.
             Donors leverage the app to track and manage inventory of prosthetics
@@ -28,7 +27,7 @@ const AtlasUROP = () => {
             .
           </p>
         </div>
-        <div className="flex flex-wrap justify-start space-x-2 text-md font-semibold text-navy dark:text-light-blue">
+        <div className="flex flex-wrap justify-start space-x-2 text-sm font-semibold text-navy dark:text-light-blue">
           <span className="pr-3 py-1">Python</span>
           <span className="px-3 py-1">Dash</span>
           <span className="px-3 py-1">Plotly</span>

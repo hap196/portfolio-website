@@ -36,9 +36,9 @@ const About = () => {
       id="about"
       ref={aboutRef}
     >
-      <div className="text-center max-w-6xl w-full px-4">
+      <div className="text-center max-w-5xl w-full px-4">
         <h2
-          className={`text-black text-4xl font-bold text-white dark:text-off-white mb-8 transition-opacity duration-700 ${
+          className={`text-black text-3xl font-bold text-white dark:text-off-white mb-8 transition-opacity duration-700 ${
             isVisible ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -50,7 +50,7 @@ const About = () => {
               isVisible ? "animate-flyInFromBottom" : ""
             }`}
           >
-            <p className="py-2 ">
+            <p className="py-2 text-md">
               Since my first high school webdev class, I've been an avid web,{" "}
               <a
                 href="https://www.congressionalappchallenge.us/21-va11/"
@@ -82,9 +82,6 @@ const About = () => {
               <br />
               <br />
               <b>• Learning</b> Next.js
-              <br />
-              <br />
-              <b>• Picking up</b> figure skating
               <br />
               <br />
               <b>• Listening to</b>

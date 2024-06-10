@@ -40,7 +40,7 @@ const Home = () => {
     >
       <div className="flex flex-col justify-center h-full w-full text-left max-w-7xl px-4 lg:mx-28">
         <div>
-          <h5 className="text-2xl text-brighter-coral dark:text-coral pb-4 float-up float-up-delay-1">
+          <h5 className="text-xl text-brighter-coral dark:text-coral pb-4 float-up float-up-delay-1">
             Hey! My name is
           </h5>
           <h2 className="text-5xl md:text-7xl font-bold text-black dark:text-off-white py-2 float-up float-up-delay-2">

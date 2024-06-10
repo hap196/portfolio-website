@@ -11,7 +11,7 @@ const ProjectCard = ({
   return (
     <div className="bg-light-blue-2 dark:bg-dark-blue text-white p-4 rounded-lg shadow-md w-full hover:-translate-y-3">
       <div className="flex justify-between items-center mb-4">
-        <FaFolder className="text-brighter-coral dark:text-coral" size={32} />
+        <FaFolder className="text-brighter-coral dark:text-coral" size={28} />
         <div className="flex space-x-5 text-navy dark:text-light-blue">
           {githubLink && (
             <a href={githubLink} target="_blank" rel="noopener noreferrer">
@@ -25,13 +25,13 @@ const ProjectCard = ({
           )}
         </div>
       </div>
-      <h3 className="font-semibold text-2xl mb-4 text-black dark:text-off-white">
+      <h3 className="font-semibold text-xl mb-4 text-black dark:text-off-white">
         {title}
       </h3>
-      <p className="text-lg mb-10 text-navy dark:text-light-blue">
+      <p className="text-md mb-10 text-navy dark:text-light-blue">
         {description}
       </p>
-      <div className="flex flex-wrap gap-2 text-md font-semibold">
+      <div className="flex flex-wrap gap-2 text-sm">
         {techStack.map((tech) => (
           <span
             key={tech}

@@ -31,7 +31,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 sm:px-10 md:px-10 lg:px-20 xl:px-20 w-full z-20 flex justify-between items-center px-10 py-4 text-xl dark:text-light-blue text-navy bg-lighter-blue dark:bg-navy">
+    <nav className="fixed top-0 left-0 sm:px-10 md:px-10 lg:px-20 xl:px-20 w-full z-20 flex justify-between items-center px-10 py-4 text-md dark:text-light-blue text-navy bg-lighter-blue dark:bg-navy">
       <div className="py-2">
         <a href="#home" className="nav-title py-2 hover:text-brighter-coral dark:hover:text-coral">
           Home
