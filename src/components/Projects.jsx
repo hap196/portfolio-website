@@ -18,7 +18,7 @@ const Projects = () => {
         <div className="mb-36 px-4">
           <AntibodyUROP />
         </div>
-        <div className="px-10">
+        <div className="px-10 flex justify-center">
           <ProjectGallery />
         </div>
       </div>
