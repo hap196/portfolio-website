@@ -18,13 +18,13 @@ const SocialSidebar = () => {
       >
         <FaLinkedin size="1.5em" />
       </a>
-      <a
+      {/* <a
         href="https://www.instagram.com/hailey.pan/"
         target="_blank"
         className="text-white hover:text-brighter-coral dark:hover:text-coral mb-6"
       >
         <FaInstagram size="1.5em" />
-      </a>
+      </a> */}
       <a
         href="https://spotify.com"
         target="_blank"

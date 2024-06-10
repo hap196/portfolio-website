@@ -3,7 +3,10 @@ import { FaPaperPlane } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="w-screen h-screen bg-slate-300 bg-lighter-blue dark:bg-navy flex flex-col items-center justify-center p-4 md:pt-64">
+    <div
+      id="contact"
+      className="w-screen h-screen bg-slate-300 bg-lighter-blue dark:bg-navy flex flex-col items-center justify-center p-4 md:pt-64"
+    >
       <h1 className="text-3xl md:text-4xl font-bold text-black dark:text-off-white mb-8 md:mb-12">
         Get In Touch
       </h1>

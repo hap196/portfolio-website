@@ -11,6 +11,14 @@ const ProjectGallery = () => {
       liveLink: "https://folio-ai-website.vercel.app/",
     },
     {
+      title: "SneakIn",
+      description:
+        "AI model to predict StockX product prices using time series analysis and clustering algorithms.",
+      techStack: ["Python", "React", "HTML", "CSS", "Scikit-learn", "Tensorflow"],
+      githubLink: "https://github.com/hap196/aim-labs-2024",
+      liveLink: "",
+    },
+    {
       title: "Flood Vulnerability Prediction",
       description:
         "An ML model to identify regions highly vulnerable to flooding based on geographic features.",
@@ -39,14 +47,6 @@ const ProjectGallery = () => {
         "Tailwind",
       ],
       githubLink: "https://github.com/hap196/folio-website",
-      liveLink: "",
-    },
-    {
-      title: "StockX Price Predictor (Coming Soon!)",
-      description:
-        "AI model to predict StockX product prices using time series analysis and clustering algorithms.",
-      techStack: ["Python", "Scikit-learn", "Tensorflow"],
-      githubLink: "https://github.com/hap196/aim-labs-2024",
       liveLink: "",
     },
   ];
