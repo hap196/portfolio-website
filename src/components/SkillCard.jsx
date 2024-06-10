@@ -16,22 +16,22 @@ const SkillCard = ({ name, icon, experience }) => {
   return (
     <div
       ref={ref}
-      className={`relative w-full h-32 transform-style-preserve-3d transition-transform duration-700 ease-in-out ${
+      className={`relative w-full h-24 transform-style-preserve-3d transition-transform duration-700 ease-in-out ${
         visible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"
       }`}
     >
       <div className="relative w-full h-full cursor-pointer group perspective-1000">
-        <div className="absolute inset-0 flex flex-col items-center justify-center p-4 border-2 border-gray-200 dark:border-off-white rounded-lg shadow-md bg-light-blue-2 dark:bg-dark-blue backface-hidden group-hover:rotate-y-180 transition-transform duration-700 ease-in-out">
-          <img src={icon} alt={`${name} icon`} className="h-16 w-16 mb-2" />
-          <p className="text-lg font-semibold text-gray-800 dark:text-off-white">
+        <div className="absolute inset-0 flex flex-col items-center justify-center p-2 border-2 border-gray-200 dark:border-off-white rounded-lg shadow-md bg-light-blue-2 dark:bg-dark-blue backface-hidden group-hover:rotate-y-180 transition-transform duration-700 ease-in-out">
+          <img src={icon} alt={`${name} icon`} className="h-12 w-12 mb-1" />
+          <p className="text-sm font-semibold text-gray-800 dark:text-off-white">
             {name}
           </p>
         </div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center p-4 border-2 border-gray-200 dark:border-off-white rounded-lg shadow-md bg-light-blue-2 dark:bg-dark-blue rotate-y-180 backface-hidden group-hover:rotate-y-0 transition-transform duration-700 ease-in-out">
-          <p className="text-lg font-semibold text-gray-800 dark:text-off-white">
+        <div className="absolute inset-0 flex flex-col items-center justify-center p-2 border-2 border-gray-200 dark:border-off-white rounded-lg shadow-md bg-light-blue-2 dark:bg-dark-blue rotate-y-180 backface-hidden group-hover:rotate-y-0 transition-transform duration-700 ease-in-out">
+          <p className="text-sm font-semibold text-gray-800 dark:text-off-white">
             Experience:
           </p>
-          <p className="text-lg font-semibold text-gray-800 dark:text-off-white">
+          <p className="text-sm font-semibold text-gray-800 dark:text-off-white">
             {experience} years
           </p>
         </div>

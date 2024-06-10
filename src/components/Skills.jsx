@@ -142,26 +142,14 @@ const skills = {
 
 const Skills = () => {
   return (
-    <div
-      className="w-screen min-h-screen flex flex-col items-center justify-center bg-lighter-blue dark:bg-navy"
-      id="skills"
-    >
-      <h2 className="text-4xl font-bold text-black dark:text-off-white mb-8 transition-opacity duration-700">
-        Skills
-      </h2>
+    <div className="w-screen min-h-screen flex flex-col items-center justify-center bg-lighter-blue dark:bg-navy py-32" id="skills">
+      <h2 className="text-4xl font-bold text-black dark:text-off-white mb-8 transition-opacity duration-700">Skills</h2>
       {Object.entries(skills).map(([category, skills]) => (
         <div key={category} className="mb-8 w-full max-w-6xl">
-          <h3 className="text-2xl font-semibold text-black dark:text-off-white mb-4">
-            {category}
-          </h3>
+          <h3 className="text-2xl font-semibold text-black dark:text-off-white mb-4">{category}</h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {skills.map((skill) => (
-              <SkillCard
-                key={skill.name}
-                name={skill.name}
-                icon={skill.icon}
-                experience={skill.experience}
-              />
+            {skills.map(skill => (
+              <SkillCard key={skill.name} name={skill.name} icon={skill.icon} experience={skill.experience} />
             ))}
           </div>
         </div>

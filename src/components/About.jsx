@@ -32,7 +32,7 @@ const About = () => {
 
   return (
     <div
-      className="w-screen h-screen flex items-center justify-center bg-lighter-blue dark:bg-navy"
+      className="w-screen h-screen flex items-center justify-center bg-lighter-blue dark:bg-navy py-32"
       id="about"
       ref={aboutRef}
     >

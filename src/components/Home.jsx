@@ -43,14 +43,14 @@ const Home = () => {
           <h5 className="text-2xl text-brighter-coral dark:text-coral pb-4 float-up float-up-delay-1">
             Hey! My name is
           </h5>
-          <h1 className="text-4xl md:text-8xl font-bold text-black dark:text-off-white py-2 float-up float-up-delay-2">
+          <h2 className="text-5xl md:text-7xl font-bold text-black dark:text-off-white py-2 float-up float-up-delay-2">
             Hailey Pan.
-          </h1>
-          <h2 className="text-4xl md:text-8xl font-bold text-darker-blue dark:text-light-blue py-2 float-up float-up-delay-3">
+          </h2>
+          <h2 className="text-5xl md:text-7xl font-bold text-darker-blue dark:text-light-blue py-2 float-up float-up-delay-3">
             I build {currentText}
             <span className="blink-cursor w-48">|</span>
           </h2>
-          <p className="text-xl md:text-2xl mt-8 md:mt-14 text-darker-blue dark:text-light-blue w-full md:w-3/5 float-up float-up-delay-4">
+          <p className="text-xl md:text-xl mt-8 md:mt-14 text-darker-blue dark:text-light-blue w-full md:w-3/5 float-up float-up-delay-4">
             I'm a Computer Science student at MIT excited about using software
             and AI to create tools that improve our everyday lives. I've
             previously developed for fields such as healthcare, education, and
