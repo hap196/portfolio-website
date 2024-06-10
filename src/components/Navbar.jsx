@@ -55,12 +55,12 @@ const Navbar = () => {
             Contact
           </a>
           <button onClick={toggleTheme} className="float-down ml-4 hover:text-brighter-coral dark:hover:text-coral icon-spin">
-        <IoInvertMode className={`text-3xl icon-rotate ${darkMode ? 'dark-mode-active' : ''}`} />
+        <IoInvertMode className={`text-2xl icon-rotate ${darkMode ? 'dark-mode-active' : ''}`} />
       </button>
         </div>
         <div className="md:hidden">
           <button onClick={toggleMenu}>
-            {isMenuOpen ? <IoClose className="text-3xl" /> : <IoMenu className="text-3xl" />}
+            {isMenuOpen ? <IoClose className="text-2xl" /> : <IoMenu className="text-2xl" />}
           </button>
         </div>
       </div>
