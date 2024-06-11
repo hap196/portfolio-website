@@ -45,9 +45,9 @@ const Navbar = () => {
           <a href="#skills" className="float-down px-4 py-2 hover:text-brighter-coral dark:hover:text-coral">
             Skills
           </a>
-          <a href="#experience" className="float-down px-4 py-2 hover:text-brighter-coral dark:hover:text-coral">
+          {/* <a href="#experience" className="float-down px-4 py-2 hover:text-brighter-coral dark:hover:text-coral">
             Experience
-          </a>
+          </a> */}
           <a href="#projects" className="float-down px-4 py-2 hover:text-brighter-coral dark:hover:text-coral">
             Projects
           </a>

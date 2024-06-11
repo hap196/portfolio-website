@@ -54,28 +54,28 @@ const About = () => {
               Since my first high school webdev class, I've been an avid web,{" "}
               <a
                 href="https://www.congressionalappchallenge.us/21-va11/"
-                className="underline underline-offset-4 text-brighter-coral dark:text-coral"
+                className="underline underline-offset-4"
                 target="_blank"
               >
                 mobile
               </a>{" "}
-              and AI developer. Though I started in computational biology
-              research, I've grown to love software development. I started out
-              by creating simple tools for healthcare clinics, then expanded to
-              create all kinds of applications that aimed to solve other
-              problems I saw (check them out below!!).
+              and AI developer. Though I started in bioinformatics, I've come to
+              realize that <span className="font-bold dark:text-off-white">I love all types of software development—in all types of
+                applications! </span>
+              So, I've since expanded my projects scope to explore education,
+              environmental engineering, geospatial tech, and fintech.
               <br />
               <br />
-              Outside of programming, I enjoy leadership and LOVE working in a
-              team, and have held such roles as a part of{" "}
+              Outside of programming, I enjoy <span className="font-bold dark:text-off-white">leadership</span> and LOVE working in a
+              <span className="font-bold dark:text-off-white"> team</span>, and have held such roles as a part of{" "}
               <a
                 href="https://woodsonscioly.org/"
-                className="underline underline-offset-4 text-brighter-coral dark:text-coral"
+                className="underline underline-offset-4"
                 target="_blank"
               >
                 Science Olympiad
               </a>
-              , Computer Science Honor Society, and IT Girls club.
+              , Computer Science Honor Society, and Girls Who Code.
             </p>
             <p className="py-2">
               <span className="underline underline-offset-4">Currently...</span>
@@ -85,11 +85,11 @@ const About = () => {
               <br />
               <br />
               <b>• Listening to</b>
-              <i> Eastside</i> by Lyn Lapid
+              <i> New Romantics</i> by Taylor Swift
               <br />
               <br />
               <b>• Spending time</b> geocaching🪨, growing plants🪴, running🏃‍♀️,
-              and eating Chipotle Burritos🌯
+              and eating Chipotle Burritos🌯🤡
             </p>
           </div>
           <img

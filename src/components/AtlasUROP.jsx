@@ -1,11 +1,39 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import AtlasImage from "../assets/atlas.png";
 
 const AtlasUROP = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const atlasRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    if (atlasRef.current) {
+      observer.observe(atlasRef.current);
+    }
+
+    return () => {
+      if (atlasRef.current) {
+        observer.unobserve(atlasRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div
-      className="flex flex-col lg:flex-row items-center mx-auto px-10 max-w-5xl"
+      ref={atlasRef}
+      className={`flex flex-col lg:flex-row items-center mx-auto px-10 max-w-5xl ${isVisible ? 'float-up' : ''}`}
     >
       <div className="w-full flex flex-col items-center justify-center mb-10 lg:w-auto lg:items-start lg:mb-3 lg:absolute left-1/2 transform translate-x-0 md:left-auto lg:pr-72 z-10">
         <h3 className="text-left font-semibold text-lg pb-2 text-brighter-coral dark:text-coral">
@@ -14,13 +42,13 @@ const AtlasUROP = () => {
         <h3 className="text-left font-bold text-2xl text-black dark:text-off-white pb-2">
           Atlas
         </h3>
-        <div className="p-4 my-3 max-w-lg rounded-md shadow-lg shadow-black bg-light-blue-2 dark:bg-dark-blue">
+        <div className="p-4 my-3 max-w-lg rounded-md shadow-lg shadow-black bg-light-blue-2 dark:bg-dark-blue transition-opacity duration-700 ${isVisible ? 'animate-floatUp' : ''}">
           <p className="text-md lg:text-left text-navy dark:text-light-blue">
             A web application that visualizes supply chain data for the
             Orthotics & Prosthetics (O&P) sector, primarily in Sierra Leone.
             Donors leverage the app to track and manage inventory of prosthetics
             supplies distributed to ensure that Sierra Leone healthcare clinics'
-            needs are met. Conducted under the{" "}
+            needs are met. Built under the{" "}
             <a href="https://www.media.mit.edu/projects/sierra-leone-prosthetics-orthotics/overview/" className="underline underline-offset-4 text-brighter-coral dark:text-coral">
               Media Lab
             </a>
@@ -34,26 +62,19 @@ const AtlasUROP = () => {
           <span className="pl-3 py-1">Node.js</span>
         </div>
         <div className="flex space-x-5 text-xl justify-start mt-4 text-navy dark:text-light-blue">
-          <a
+          {/* <a
             href="https://github.com"
             target="_blank"
             className="hover:text-brighter-coral dark:hover:text-coral"
           >
             <FaGithub />
-          </a>
-          {/* <a
-            href="https://liveprojectlink.com"
-            target="_blank"
-            className="hover:text-brighter-coral dark:hover:text-coral"
-          >
-            <FaExternalLinkAlt />
           </a> */}
         </div>
       </div>
       <img
         src={AtlasImage}
         alt="Chat View"
-        className="rounded-xl z-0 lg:ml-auto w-full"
+        className="rounded-xl z-0 lg:ml-auto w-full transition-all duration-700 ${isVisible ? 'animate-floatUp' : ''}"
         style={{ maxWidth: "70%", maxHeight: "800px", height: "auto" }}
       />
     </div>

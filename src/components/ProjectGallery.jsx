@@ -11,33 +11,41 @@ const ProjectGallery = () => {
       liveLink: "https://folio-ai-website.vercel.app/",
     },
     {
-      title: "SneakIn",
-      description:
-        "AI model to predict StockX product prices using time series analysis and clustering algorithms.",
-      techStack: ["Python", "React", "HTML", "CSS", "Scikit-learn", "Tensorflow"],
-      githubLink: "https://github.com/hap196/aim-labs-2024",
-      liveLink: "",
-    },
-    {
       title: "Flood Vulnerability Prediction",
       description:
         "An ML model to identify regions highly vulnerable to flooding based on geographic features.",
       techStack: ["Scikit-learn", "Tensorflow", "ArcGIS"],
-      githubLink: "https://github.com/flood-prediction",
-      liveLink: "../../public/flood-prediction.pdf",
+      githubLink: "https://github.com/hap196/flood-prediction",
+      liveLink: "https://ieeexplore.ieee.org/abstract/document/10534980",
+    },
+    {
+      title: "Antibody Structure Prediction",
+      description: (
+        <>
+          An analysis of antibody-antigen interactions to identify common motifs to train an ML model. Conducted under the{" "}
+          <a
+            href="https://www.deboramarkslab.com/"
+            className="underline underline-offset-4 text-brighter-coral text-coral"
+          >
+            Marks Lab
+          </a>
+          .
+        </>
+      ),
+      techStack: ["Python", "Jupyter", "Matplotlib", "Numpy", "Pandas"],
+      githubLink: "https://github.com/hap196/antibody-motif-ml",
+      liveLink: "",
     },
     {
       title: "Personal Website",
-      description:
-        "All about me!",
+      description: "ME!",
       techStack: ["React", "Tailwind", "HTML"],
       githubLink: "https://github.com/hap196/personal-website",
       liveLink: "https://hpan.dev",
     },
     {
       title: "Folio Full-Stack Website (Coming Soon!)",
-      description:
-        "Desktop version for the complementary Folio app.",
+      description: "Desktop version for the complementary Folio app.",
       techStack: [
         "React",
         "Express.js",
@@ -52,7 +60,7 @@ const ProjectGallery = () => {
   ];
 
   return (
-    <div className="px-10 max-w-5xl">
+    <div className="px-10 max-w-5xl mx-auto">
       <h2 className="text-white dark:text-off-white text-center text-3xl font-bold mb-12">
         Other Projects
       </h2>

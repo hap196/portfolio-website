@@ -11,16 +11,16 @@ const ProjectCard = ({
   return (
     <div className="bg-light-blue-2 dark:bg-dark-blue text-white p-4 rounded-lg shadow-md w-full hover:-translate-y-3">
       <div className="flex justify-between items-center mb-4">
-        <FaFolder className="text-brighter-coral dark:text-coral" size={28} />
+        <FaFolder className="text-brighter-coral dark:text-coral" size={24} />
         <div className="flex space-x-5 text-navy dark:text-light-blue">
           {githubLink && (
             <a href={githubLink} target="_blank" rel="noopener noreferrer">
-              <FaGithub className="hover:text-brighter-coral dark:hover:text-coral" size={28} />
+              <FaGithub className="hover:text-brighter-coral dark:hover:text-coral" size={24} />
             </a>
           )}
           {liveLink && (
             <a href={liveLink} target="_blank" rel="noopener noreferrer">
-              <FaExternalLinkAlt className="hover:text-brighter-coral dark:hover:text-coral" size={28} />
+              <FaExternalLinkAlt className="hover:text-brighter-coral dark:hover:text-coral" size={24} />
             </a>
           )}
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import Folio from "./FolioApp";
 import AtlasUROP from "./AtlasUROP";
-import AntibodyUROP from "./AntibodyUROP";
+import SneakIn from "./SneakIn";
 import ProjectGallery from "./ProjectGallery";
 
 const Projects = () => {
@@ -16,7 +16,7 @@ const Projects = () => {
           <AtlasUROP />
         </div>
         <div className="mb-36 px-4">
-          <AntibodyUROP />
+          <SneakIn />
         </div>
         <div className="px-10 flex justify-center">
           <ProjectGallery />

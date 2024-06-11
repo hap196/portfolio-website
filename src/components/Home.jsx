@@ -5,9 +5,11 @@ const Home = () => {
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const words = [
-    "polished websites.",
-    "easy-to-use mobile apps.",
-    "innovative startups.",
+    "React fiend.",
+    "full-stack developer.",
+    "startup enthusiast.",
+    "lover of all things INNOVATION.",
+    "mobile developer.",
   ];
 
   useEffect(() => {
@@ -47,39 +49,25 @@ const Home = () => {
             Hailey Pan.
           </h2>
           <h2 className="text-5xl md:text-7xl font-bold text-darker-blue dark:text-light-blue py-2 float-up float-up-delay-3">
-            I build {currentText}
+            I'm a {currentText}
             <span className="blink-cursor w-48">|</span>
           </h2>
           <p className="text-xl md:text-xl mt-8 md:mt-14 text-darker-blue dark:text-light-blue w-full md:w-3/5 float-up float-up-delay-4">
-            I'm a Computer Science student at MIT excited about using software
-            and AI to create tools that improve our everyday lives. I've
-            previously developed for fields such as healthcare, education, and
-            environmental engineering, and am continuing to explore these
-            applications through internships and{" "}
-            <a
-              href="#projects"
-              className="text-brighter-coral dark:text-coral underline underline-offset-8 dark:hover:text-dark-coral"
-            >
-              personal projects
-            </a>
-            . I'm also very interested in entrepreneurship and recently
-            co-founded a&nbsp;
-            <a
-              href="https://folio-ai-website.vercel.app/"
-              className="text-brighter-coral dark:text-coral underline underline-offset-8 dark:hover:text-dark-coral"
-              target="_blank"
-            >
-              education startup
-            </a>
-            &nbsp;focused on democratizing the college admissions process.
+            I'm a Computer Science student at <span className="text-coral">MIT</span> excited about building my{" "}
+            <span className="text-coral">next big idea</span>.
+          </p>
+          <p className="text-xl md:text-xl mt-2 md:mt-4 text-darker-blue dark:text-light-blue w-full md:w-3/5 float-up float-up-delay-4">
+            There's nothing I love more than identifying problems in the world
+            and using the tools I have to solve them. I truly live by the idea
+            of <span className="text-coral">coding for good</span> while having fun doing so.
           </p>
           <a
             href="https://github.com/hap196"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="relative overflow-hidden dark:bg-navy mt-10 text-xl font-bold px-6 py-4 rounded-lg border-2 border-coral shadow-md shadow-coral/50 transition duration-300 ease-in-out btn-slide-fill float-up float-up-delay-5">
-              Check out my Github!
+            <button className="relative overflow-hidden dark:bg-navy mt-10 text-lg font-bold px-6 py-4 rounded-lg border-2 border-coral shadow-md shadow-coral/50 transition duration-300 ease-in-out btn-slide-fill float-up float-up-delay-5">
+              Stop by my Github (please)!
             </button>
           </a>
         </div>

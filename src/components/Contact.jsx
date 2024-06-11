@@ -45,7 +45,7 @@ const Contact = () => {
       className="w-screen h-screen bg-slate-300 bg-lighter-blue dark:bg-navy flex flex-col items-center justify-center px-4 py-32 md:pt-64"
     >
       <h1 className="text-3xl md:text-3xl font-bold text-black dark:text-off-white mb-8 md:mb-12">
-        Get In Touch
+        Let's Chat!
       </h1>
       {/* Form */}
       <div className="w-full max-w-xl md:max-w-2xl bg-slate-300 bg-lighter-blue dark:bg-navy text-white p-8 rounded">
