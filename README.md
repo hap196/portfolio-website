@@ -3,4 +3,5 @@
 ## Tools
 - React + Vite
 - TailwindCSS
+- Node.js
 - EmailJS
