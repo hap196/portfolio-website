@@ -60,22 +60,12 @@ const About = () => {
                 mobile
               </a>{" "}
               and AI developer. Though I started in bioinformatics, I've come to
-              realize that <span className="font-bold dark:text-off-white">I love all types of software development—in all types of
-                applications! </span>
+              realize that I enjoy developing all types of software—in all types of
+                applications.
               So, I've since expanded my projects scope to explore education,
               environmental engineering, geospatial tech, and fintech.
               <br />
               <br />
-              Outside of programming, I enjoy <span className="font-bold dark:text-off-white">leadership</span> and LOVE working in a
-              <span className="font-bold dark:text-off-white"> team</span>, and have held such roles as a part of{" "}
-              <a
-                href="https://woodsonscioly.org/"
-                className="underline underline-offset-4"
-                target="_blank"
-              >
-                Science Olympiad
-              </a>
-              , Computer Science Honor Society, and Girls Who Code.
             </p>
             <p className="py-2">
               <span className="underline underline-offset-4">Currently...</span>
@@ -85,11 +75,11 @@ const About = () => {
               <br />
               <br />
               <b>• Listening to</b>
-              <i> New Romantics</i> by Taylor Swift
+              <i>Like the movies</i> by Laufey
               <br />
               <br />
-              <b>• Spending time</b> geocaching🪨, growing plants🪴, running🏃‍♀️,
-              and eating Chipotle Burritos🌯🤡
+              <b>• Spending time</b> reading📚, taking + editing photos📸,
+              growing plants🪴, and exploring new cafes in Boston🥐
             </p>
           </div>
           <img

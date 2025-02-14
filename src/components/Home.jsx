@@ -5,10 +5,9 @@ const Home = () => {
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const words = [
-    "React fiend.",
     "full-stack developer.",
     "startup enthusiast.",
-    "lover of all things INNOVATION.",
+    "leader",
     "mobile developer.",
   ];
 
@@ -43,7 +42,7 @@ const Home = () => {
       <div className="flex flex-col justify-center h-full w-full text-left max-w-7xl px-4 lg:mx-28">
         <div>
           <h5 className="text-xl text-brighter-coral dark:text-coral pb-4 float-up float-up-delay-1">
-            Hey! My name is
+            Hi! My name is
           </h5>
           <h2 className="text-5xl md:text-7xl font-bold text-black dark:text-off-white py-2 float-up float-up-delay-2">
             Hailey Pan.
@@ -58,7 +57,7 @@ const Home = () => {
           </p>
           <p className="text-xl md:text-xl mt-2 md:mt-4 text-darker-blue dark:text-light-blue w-full md:w-3/5 float-up float-up-delay-4">
             There's nothing I love more than identifying problems in the world
-            and using the tools I have to solve them. I truly live by the idea
+            and using the tools I have to solve them. I live by the idea
             of <span className="text-coral">coding for good</span> while having fun doing so.
           </p>
           <a
@@ -67,7 +66,7 @@ const Home = () => {
             rel="noopener noreferrer"
           >
             <button className="relative overflow-hidden dark:bg-navy mt-10 text-lg font-bold px-6 py-4 rounded-lg border-2 border-coral shadow-md shadow-coral/50 transition duration-300 ease-in-out btn-slide-fill float-up float-up-delay-5">
-              Stop by my Github (please)!
+              Check out my Github
             </button>
           </a>
         </div>
