@@ -14,6 +14,7 @@
   --color-foreground: var(--foreground);
   --font-playfair: var(--font-playfair);
   --font-inter: var(--font-inter);
+  --font-send-flowers: var(--font-send-flowers);
 
   --color-text-dark: var(--text-dark);
   --color-text-light: var(--text-light);
@@ -29,7 +30,7 @@
 }
 
 body {
-  background: var(--gradient-start);
+  background: transparent;
   color: var(--foreground);
   font-family: var(--font-inter), system-ui, sans-serif;
   line-height: 1.6;
@@ -80,4 +81,12 @@ html {
   100% {
     background-size: 100% 100%;
   }
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }

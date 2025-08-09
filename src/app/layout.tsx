@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Playfair_Display, Inter, Send_Flowers } from "next/font/google";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -16,6 +17,13 @@ const inter = Inter({
   display: "swap",
 });
 
+const sendFlowers = Send_Flowers({
+  variable: "--font-send-flowers",
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Hailey Pan",
   description: "Personal Website 2025",
@@ -28,7 +36,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${playfair.variable} ${inter.variable} antialiased`}>
+      <body
+        className={`${playfair.variable} ${inter.variable} ${sendFlowers.variable} antialiased`}
+      >
+        <Navbar />
         {children}
       </body>
     </html>
