@@ -20,6 +20,18 @@ export default function Home() {
   const secondWords = secondParagraph.split(" ");
   const totalWords = firstWords.length + secondWords.length;
 
+  const boldWords = new Set([
+    "CS",
+    "student",
+    "at",
+    "MIT",
+    "full",
+    "stack",
+    "development",
+    "machine",
+    "learning.",
+  ]);
+
   useEffect(() => {
     const handleParallaxScroll = () => {
       if (parallaxRef.current) {
@@ -65,10 +77,20 @@ export default function Home() {
     visibleWordsTotal - firstWords.length
   );
 
-  const displayFirstText = firstWords.slice(0, firstParagraphWords).join(" ");
-  const displaySecondText = secondWords
-    .slice(0, secondParagraphWords)
-    .join(" ");
+  const visibleFirstWords = firstWords.slice(0, firstParagraphWords);
+  const visibleSecondWords = secondWords.slice(0, secondParagraphWords);
+
+  const renderWords = (words: string[]) => {
+    return words.map((word, index) => {
+      const isBold = boldWords.has(word);
+      return (
+        <span key={index} className={isBold ? "font-bold" : ""}>
+          {word}
+          {index < words.length - 1 ? " " : ""}
+        </span>
+      );
+    });
+  };
 
   return (
     <div className="relative">
@@ -92,7 +114,7 @@ export default function Home() {
           sticky={{ start: 0.8, end: 2.8 }}
           style={{ ...alignCenter, justifyContent: "center" }}
         >
-          <div className="flex items-center gap-16 z-10">
+          <div className="flex items-center gap-24 z-10">
             <div className="w-96">
               <img
                 src="/about/me.jpeg"
@@ -100,13 +122,13 @@ export default function Home() {
                 className="w-96 h-full object-cover rounded-2xl shadow-xl border-4 border-white"
               />
             </div>
-            <div className="w-96 text-right">
-              <h3 className="font-playfair text-2xl lg:text-3xl text-black leading-relaxed mb-4">
-                {displayFirstText}
+            <div className="w-132 text-right">
+              <h3 className="font-playfair text-xl lg:text-2xl text-black leading-relaxed mb-12">
+                {renderWords(visibleFirstWords)}
               </h3>
-              {displaySecondText && (
-                <p className="font-inter text-lg text-gray-700 leading-relaxed">
-                  {displaySecondText}
+              {visibleSecondWords.length > 0 && (
+                <p className="font-playfair text-xl lg:text-2xl text-black leading-relaxed">
+                  {renderWords(visibleSecondWords)}
                 </p>
               )}
             </div>
