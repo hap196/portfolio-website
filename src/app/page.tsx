@@ -10,6 +10,8 @@ export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const parallaxRef = useRef<any>(null);
   const alignCenter = { display: "flex", alignItems: "center" };
+  const lastScrollTime = useRef(0);
+  const scrollVelocity = useRef(0);
 
   const firstParagraph =
     "I'm Hailey, a CS student at MIT with experience in full stack development and machine learning.";
@@ -35,9 +37,25 @@ export default function Home() {
   useEffect(() => {
     const handleParallaxScroll = () => {
       if (parallaxRef.current) {
+        const now = Date.now();
         const container = parallaxRef.current.container.current;
         const scrollTop = container.scrollTop;
         const maxScroll = container.scrollHeight - container.clientHeight;
+
+        // scroll velocity
+        const deltaTime = now - lastScrollTime.current;
+        const deltaScroll = Math.abs(
+          scrollTop - (scrollVelocity.current || scrollTop)
+        );
+        const velocity = deltaTime > 0 ? deltaScroll / deltaTime : 0;
+
+        // throttle if scrolling too fast
+        if (velocity > 1.25 && deltaTime < 15) {
+          return;
+        }
+
+        lastScrollTime.current = now;
+        scrollVelocity.current = scrollTop;
 
         const animationStart = maxScroll * 0.2;
         const animationEnd = maxScroll * 0.6;
@@ -122,7 +140,7 @@ export default function Home() {
                 className="w-96 h-full object-cover rounded-2xl shadow-xl border-4 border-white"
               />
             </div>
-            <div className="w-132 text-right">
+            <div className="w-140 text-right">
               <h3 className="font-playfair text-xl lg:text-2xl text-black leading-relaxed mb-12">
                 {renderWords(visibleFirstWords)}
               </h3>
