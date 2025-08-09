@@ -1,15 +1,17 @@
 const Roles = () => {
   return (
     <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
-      <div className="flex space-x-12 text-center">
+      <div className="flex items-center space-x-8 text-center">
         <span className="font-playfair text-2xl text-text-dark tracking-wide">
-          DEVELOPER
+          Developer
         </span>
+        <span className="text-text-dark text-lg">✦</span>
         <span className="font-playfair text-2xl text-text-dark tracking-wide">
-          STUDENT
+          Student
         </span>
+        <span className="text-text-dark text-lg">✦</span>
         <span className="font-playfair text-2xl text-text-dark tracking-wide">
-          FOUNDER
+          Founder
         </span>
       </div>
     </div>
