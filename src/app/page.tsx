@@ -5,6 +5,7 @@ import { useEffect, useState, useRef } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Hero from "@/components/Hero";
 import Roles from "@/components/Roles";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -114,7 +115,7 @@ export default function Home() {
     <div className="relative">
       <div className="mesh-gradient-background"></div>
 
-      <Parallax ref={parallaxRef} pages={4.8} style={{ height: "100vh" }}>
+      <Parallax ref={parallaxRef} pages={5} style={{ height: "100vh" }}>
         {/* Hero */}
         <ParallaxLayer
           offset={0}
@@ -129,41 +130,54 @@ export default function Home() {
 
         {/* About */}
         <ParallaxLayer
-          sticky={{ start: 0.8, end: 2.8 }}
+          sticky={{ start: 1, end: 3 }}
           style={{ ...alignCenter, justifyContent: "center" }}
         >
-          <div className="flex items-center gap-24 z-10">
-            <div className="w-96">
-              <img
-                src="/about/me.jpeg"
-                alt="Hailey Pan"
-                className="w-96 h-full object-cover rounded-2xl shadow-xl border-4 border-white"
-              />
+          <div className="w-full max-w-[74rem] flex flex-col">
+            <div className="relative mb-16 text-right">
+              <div className="absolute inset-0 flex flex-col items-end justify-center pointer-events-none">
+                <h2 className="font-playfair text-5xl lg:text-6xl font-normal text-white/20 tracking-wide transform -translate-y-8">
+                  ABOUT ME
+                </h2>
+                <h2 className="font-playfair text-5xl lg:text-6xl font-normal text-white/20 tracking-wide transform translate-y-8">
+                  ABOUT ME
+                </h2>
+              </div>
+              <h2 className="font-playfair text-5xl lg:text-6xl text-black relative z-10">
+                ABOUT ME
+              </h2>
             </div>
-            <div className="w-140 text-right">
-              <h3 className="font-playfair text-xl lg:text-2xl text-black leading-relaxed mb-12">
-                {renderWords(visibleFirstWords)}
-              </h3>
-              {visibleSecondWords.length > 0 && (
-                <p className="font-playfair text-xl lg:text-2xl text-black leading-relaxed">
-                  {renderWords(visibleSecondWords)}
-                </p>
-              )}
+            <div className="flex items-center gap-24 z-10">
+              <div className="w-112">
+                <div className="bg-gradient-to-br from-pink-100 to-pink-200 p-6 shadow-2xl border-2 border-text-dark">
+                  <img
+                    src="/about/me.jpeg"
+                    alt="Hailey Pan"
+                    className="w-full h-full object-cover border-2 border-text-dark"
+                  />
+                </div>
+              </div>
+              <div className="w-160 text-right">
+                <h3 className="font-playfair text-xl lg:text-2xl text-black leading-relaxed mb-12">
+                  {renderWords(visibleFirstWords)}
+                </h3>
+                {visibleSecondWords.length > 0 && (
+                  <p className="font-playfair text-xl lg:text-2xl text-black leading-relaxed">
+                    {renderWords(visibleSecondWords)}
+                  </p>
+                )}
+              </div>
             </div>
           </div>
         </ParallaxLayer>
 
-        {/* Experiences */}
+        {/* Experience */}
         <ParallaxLayer
-          offset={3.8}
+          offset={4}
           speed={0}
           style={{ ...alignCenter, justifyContent: "center" }}
         >
-          <div className="flex flex-col items-center justify-center h-full text-center">
-            <h1 className="font-playfair text-8xl lg:text-9xl font-normal text-text-dark tracking-wide relative z-10 mb-8">
-              EXPERIENCES
-            </h1>
-          </div>
+          <Experience />
         </ParallaxLayer>
       </Parallax>
     </div>
