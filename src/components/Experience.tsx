@@ -14,6 +14,7 @@ interface ExperienceItem {
   timeline: string;
   location: string;
   description: string[];
+  skills: string[];
 }
 
 const Experience = () => {
@@ -34,6 +35,7 @@ const Experience = () => {
       description: [
         "Deployed an end-to-end solution for automating business intelligence for 10+ teams, already in active use",
       ],
+      skills: ["Python", "LangChain", "AWS", "Snowflake", "FastAPI"],
     },
     {
       company: "MITRE",
@@ -43,6 +45,15 @@ const Experience = () => {
       location: "Mclean, VA",
       description: [
         "Shipped features for a full-stack MERN web app serving 10k+ Air Force personnel",
+      ],
+      skills: [
+        "JavaScript",
+        "React.js",
+        "Express.js",
+        "Node.js",
+        "PostgreSQL",
+        "AWS",
+        "Docker",
       ],
     },
     {
@@ -54,6 +65,7 @@ const Experience = () => {
       description: [
         "Worked on a Python platform for supply chain management, helping save over $10k annually in procurement costs",
       ],
+      skills: ["Python", "Dash", "Firebase"],
     },
     {
       company: "AppDev @ MIT",
@@ -63,6 +75,15 @@ const Experience = () => {
       location: "Cambridge, MA",
       description: [
         "Founded MIT's mobile and web development club with 50+ members",
+      ],
+      skills: [
+        "TypeScript",
+        "React.js",
+        "Next.js",
+        "Express.js",
+        "Node.js",
+        "MongoDB",
+        "AWS",
       ],
     },
     {
@@ -74,6 +95,7 @@ const Experience = () => {
       description: [
         "Co-led project accelerator for MIT's largest undergraduate AI club",
       ],
+      skills: ["Python", "PyTorch", "TensorFlow"],
     },
     {
       company: "Harvard Medical School",
@@ -84,6 +106,7 @@ const Experience = () => {
       description: [
         "Conducted research under Professor Debora Marks, developing machine learning models and algorithms to predict antibody-antigen interactions",
       ],
+      skills: ["Python", "BioPython", "PyTorch", "PyMOL"],
     },
   ];
 
@@ -111,16 +134,28 @@ const Experience = () => {
                 <h4 className="font-playfair text-3xl text-text-dark mb-6">
                   {allExperiences[selectedExperience].company}
                 </h4>
-                <ul className="font-inter text-lg text-gray-700 leading-relaxed space-y-4">
+                <div className="font-inter text-lg text-gray-700 leading-relaxed space-y-4 mb-8">
                   {allExperiences[selectedExperience].description.map(
-                    (bullet, index) => (
-                      <li key={index} className="flex items-start gap-3">
-                        <span className="text-text-dark mt-1">✦</span>
-                        <span>{bullet}</span>
-                      </li>
+                    (desc, index) => (
+                      <p key={index}>{desc}</p>
                     )
                   )}
-                </ul>
+                </div>
+                <div className="font-inter text-lg text-gray-700 leading-relaxed">
+                  <h5 className="font-playfair text-xl text-text-dark mb-4">
+                    Skills
+                  </h5>
+                  <ul className="space-y-2">
+                    {allExperiences[selectedExperience].skills.map(
+                      (skill, index) => (
+                        <li key={index} className="flex items-start gap-3">
+                          <span className="text-text-dark mt-1">◆</span>
+                          <span>{skill}</span>
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </div>
               </div>
             )}
           </div>
@@ -148,11 +183,7 @@ const Experience = () => {
                     sx={{ minHeight: "90px", cursor: "pointer" }}
                     onMouseEnter={() => setHoveredExperience(index)}
                     onMouseLeave={() => setHoveredExperience(null)}
-                    onClick={() =>
-                      setSelectedExperience(
-                        selectedExperience === index ? null : index
-                      )
-                    }
+                    onClick={() => setSelectedExperience(index)}
                   >
                     <TimelineOppositeContent
                       sx={{
