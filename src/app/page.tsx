@@ -45,6 +45,8 @@ export default function Home() {
         const scrollTop = container.scrollTop;
         const maxScroll = container.scrollHeight - container.clientHeight;
 
+        sessionStorage.setItem("scrollPosition", scrollTop.toString());
+
         // scroll velocity
         const deltaTime = now - lastScrollTime.current;
         const deltaScroll = Math.abs(
@@ -75,6 +77,12 @@ export default function Home() {
       if (parallaxRef.current) {
         const container = parallaxRef.current.container.current;
         container.addEventListener("scroll", handleParallaxScroll);
+
+        // restore scroll position when refreshing
+        const savedScrollPosition = sessionStorage.getItem("scrollPosition");
+        if (savedScrollPosition) {
+          container.scrollTop = parseInt(savedScrollPosition, 10);
+        }
 
         handleParallaxScroll();
       }
