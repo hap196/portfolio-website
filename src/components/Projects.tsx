@@ -23,7 +23,7 @@ const Projects = () => {
       title: "Orbit",
       description:
         "A full-stack web platform that brings all your work tools into one place and automates workflows with AI agents.",
-      tech: ["React.js", "Tailwind.css, Fetch AI"],
+      tech: ["React.js", "Tailwind.css", "Fetch AI"],
       year: "2025",
       link: "https://orbit.ai",
       image: "/projects/orbit.png",
@@ -97,7 +97,7 @@ const Projects = () => {
             <h1 className="text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
               PROJECTS
             </h1>
-            <h1 className="text-5xl lg:text-6xl text-text-dark whitespace-nowrap">
+            <h1 className="text-5xl lg:text-6xl font-normal text-text-dark tracking-wide whitespace-nowrap">
               PROJECTS
             </h1>
             <h1 className="text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">

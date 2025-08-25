@@ -153,7 +153,7 @@ export default function Home() {
                   ABOUT ME
                 </h2>
               </div>
-              <h2 className="text-5xl lg:text-6xl text-black relative z-10">
+              <h2 className="text-5xl lg:text-6xl font-normal text-text-dark tracking-wide whitespace-nowrap relative z-10">
                 ABOUT ME
               </h2>
             </div>
@@ -168,11 +168,11 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-160 text-right">
-                <h3 className="text-xl lg:text-2xl text-black leading-relaxed mb-12">
+                <h3 className="text-xl lg:text-2xl text-text-dark leading-relaxed mb-12">
                   {renderWords(visibleFirstWords)}
                 </h3>
                 {visibleSecondWords.length > 0 && (
-                  <p className="text-xl lg:text-2xl text-black leading-relaxed">
+                  <p className="text-xl lg:text-2xl text-text-dark leading-relaxed">
                     {renderWords(visibleSecondWords)}
                   </p>
                 )}

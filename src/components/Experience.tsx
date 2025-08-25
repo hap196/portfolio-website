@@ -112,7 +112,7 @@ const Experience = () => {
             <h1 className="text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
               EXPERIENCE
             </h1>
-            <h1 className="text-5xl lg:text-6xl text-text-dark whitespace-nowrap">
+            <h1 className="text-5xl lg:text-6xl font-normal text-text-dark tracking-wide whitespace-nowrap">
               EXPERIENCE
             </h1>
             <h1 className="text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
@@ -165,7 +165,7 @@ const Experience = () => {
                         fontFamily:
                           "var(--font-poppins), system-ui, sans-serif",
                         fontSize: "1.125rem",
-                        color: "#1a1a1a",
+                        color: "#2a2a2a",
                         paddingRight: "2rem",
                         minWidth: "120px",
                         whiteSpace: "nowrap",
@@ -184,7 +184,7 @@ const Experience = () => {
                         sx={{
                           backgroundColor: isConnectedAbove
                             ? "rgb(254, 240, 138)"
-                            : "#9ca3af",
+                            : "#2a2a2a",
                           flex: "1 1 auto",
                           transition: "all 0.4s ease",
                           boxShadow: isConnectedAbove
@@ -211,7 +211,7 @@ const Experience = () => {
                           fontSize: "1.5rem",
                           color: shouldBeYellow
                             ? "rgb(254, 240, 138)"
-                            : "#1a1a1a",
+                            : "#2a2a2a",
                           margin: 0,
                           flex: "0 0 auto",
                           transition: "all 0.15s ease",
@@ -223,7 +223,7 @@ const Experience = () => {
                         sx={{
                           backgroundColor: isConnectedBelow
                             ? "rgb(254, 240, 138)"
-                            : "#9ca3af",
+                            : "#2a2a2a",
                           flex: "1 1 auto",
                           transition: "all 0.4s ease",
                           boxShadow: isConnectedBelow
