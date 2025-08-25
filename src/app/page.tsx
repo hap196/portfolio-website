@@ -151,11 +151,11 @@ export default function Home() {
             </div>
             <div className="flex items-center gap-24 z-10">
               <div className="w-112">
-                <div className="bg-gradient-to-br from-pink-100 to-pink-200 p-6 shadow-2xl border-2 border-text-dark">
+                <div className="backdrop-blur-md bg-white/10 border-2 border-white/30 rounded-2xl p-6 shadow-lg">
                   <img
-                    src="/about/me.jpeg"
+                    src="/about/apple1.jpeg"
                     alt="Hailey Pan"
-                    className="w-full h-full object-cover border-2 border-text-dark"
+                    className="w-full h-full object-cover rounded-xl"
                   />
                 </div>
               </div>
@@ -194,7 +194,7 @@ export default function Home() {
         {/* Contact */}
         <ParallaxLayer
           offset={8}
-          speed={0}
+          speed={0.2}
           style={{ ...alignCenter, justifyContent: "center" }}
         >
           <Contact />

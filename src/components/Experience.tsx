@@ -249,14 +249,12 @@ const Experience = () => {
                       }}
                     >
                       <div className="flex items-center gap-6">
-                        <div className="bg-gradient-to-br from-pink-100 to-pink-200 p-1 shadow-2xl border border-gray-800">
-                          <div className="bg-yellow-50 p-2 border border-gray-700 flex items-center justify-center">
-                            <img
-                              src={exp.logoPath}
-                              alt={exp.company}
-                              className="w-12 h-12 object-contain"
-                            />
-                          </div>
+                        <div className="backdrop-blur-md bg-white/10 border-2 border-white/30 rounded-2xl p-3 shadow-lg flex items-center justify-center">
+                          <img
+                            src={exp.logoPath}
+                            alt={exp.company}
+                            className="w-12 h-12 object-contain rounded-xl"
+                          />
                         </div>
                         <div className="text-left">
                           <h3 className="font-playfair text-2xl text-text-dark tracking-wide">
