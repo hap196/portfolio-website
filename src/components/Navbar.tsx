@@ -2,16 +2,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Send_Flowers, Playfair_Display } from "next/font/google";
+import { Send_Flowers } from "next/font/google";
 
 const sendFlowers = Send_Flowers({
   variable: "--font-send-flowers",
-  subsets: ["latin"],
-  weight: "400",
-});
-
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
   subsets: ["latin"],
   weight: "400",
 });
@@ -43,7 +37,7 @@ const Navbar = () => {
           </Link>
           <button
             onClick={toggleMenu}
-            className={`${playfair.className} text-2xl tracking-wider text-text-dark z-50`}
+            className="text-2xl tracking-wider text-text-dark z-50"
             aria-label="Toggle menu"
           >
             {isOpen ? "Close" : "Menu"}
@@ -62,7 +56,7 @@ const Navbar = () => {
               key={link.href}
               href={link.href}
               onClick={toggleMenu}
-              className="font-playfair text-6xl text-text-dark my-6 transition-colors duration-300 hover:text-white"
+              className="text-6xl text-text-dark my-6 transition-colors duration-300 hover:text-white"
             >
               {link.label}
             </Link>

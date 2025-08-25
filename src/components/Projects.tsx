@@ -57,13 +57,13 @@ const Projects = () => {
       <div className="w-full max-w-[74rem] flex flex-col mx-auto">
         <div className="mb-24 text-right">
           <div className="pointer-events-none flex flex-col items-end">
-            <h1 className="font-playfair text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
+            <h1 className="text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
               PROJECTS
             </h1>
-            <h1 className="font-playfair text-5xl lg:text-6xl text-text-dark whitespace-nowrap">
+            <h1 className="text-5xl lg:text-6xl text-text-dark whitespace-nowrap">
               PROJECTS
             </h1>
-            <h1 className="font-playfair text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
+            <h1 className="text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
               PROJECTS
             </h1>
           </div>
@@ -89,7 +89,7 @@ const Projects = () => {
                   {project.year}
                 </span>
               </div>
-              <h3 className="font-playfair text-2xl text-text-dark mb-4 tracking-wide">
+              <h3 className="text-2xl text-text-dark mb-4 tracking-wide">
                 {project.title}
               </h3>
               <p className="font-inter text-gray-700 leading-relaxed mb-6 text-sm">

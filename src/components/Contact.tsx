@@ -23,13 +23,13 @@ const Contact = () => {
         <div className="w-full max-w-[74rem] flex flex-col mx-auto text-center">
           <div className="mb-16">
             <div className="pointer-events-none flex flex-col items-center">
-              <h1 className="font-playfair text-7xl lg:text-8xl font-normal text-white/20 tracking-wide whitespace-nowrap">
+              <h1 className="text-7xl lg:text-8xl font-normal text-white/20 tracking-wide whitespace-nowrap">
                 GET IN TOUCH
               </h1>
-              <h1 className="font-playfair text-7xl lg:text-8xl font-normal text-text-dark tracking-wide whitespace-nowrap">
+              <h1 className="text-7xl lg:text-8xl font-normal text-text-dark tracking-wide whitespace-nowrap">
                 GET IN TOUCH
               </h1>
-              <h1 className="font-playfair text-7xl lg:text-8xl font-normal text-white/20 tracking-wide whitespace-nowrap">
+              <h1 className="text-7xl lg:text-8xl font-normal text-white/20 tracking-wide whitespace-nowrap">
                 GET IN TOUCH
               </h1>
             </div>
@@ -45,7 +45,7 @@ const Contact = () => {
                     rel={
                       link.name !== "Email" ? "noopener noreferrer" : undefined
                     }
-                    className="font-playfair text-2xl text-text-dark tracking-wide hover:text-gray-600 transition-colors duration-200"
+                    className="text-2xl text-text-dark tracking-wide hover:text-gray-600 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -62,7 +62,7 @@ const Contact = () => {
         <Gallery />
       </div> */}
       <div className="text-center py-8">
-        <p className="font-playfair text-gray-500 text-sm">Copyright 2025</p>
+        <p className="text-gray-500 text-sm">Copyright 2025</p>
       </div>
     </div>
   );

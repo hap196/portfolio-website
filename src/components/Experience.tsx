@@ -115,13 +115,13 @@ const Experience = () => {
       <div className="w-full max-w-[74rem] flex flex-col">
         <div className="mb-16 text-left">
           <div className="pointer-events-none flex flex-col items-start">
-            <h1 className="font-playfair text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
+            <h1 className="text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
               EXPERIENCE
             </h1>
-            <h1 className="font-playfair text-5xl lg:text-6xl text-text-dark whitespace-nowrap">
+            <h1 className="text-5xl lg:text-6xl text-text-dark whitespace-nowrap">
               EXPERIENCE
             </h1>
-            <h1 className="font-playfair text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
+            <h1 className="text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
               EXPERIENCE
             </h1>
           </div>
@@ -131,7 +131,7 @@ const Experience = () => {
           <div className="w-128 flex items-center justify-center min-h-[600px]">
             {selectedExperience !== null && (
               <div className="w-full">
-                <h4 className="font-playfair text-3xl text-text-dark mb-6">
+                <h4 className="text-3xl text-text-dark mb-6">
                   {allExperiences[selectedExperience].company}
                 </h4>
                 <div className="font-inter text-lg text-gray-700 leading-relaxed space-y-4 mb-8">
@@ -142,9 +142,7 @@ const Experience = () => {
                   )}
                 </div>
                 <div className="font-inter text-lg text-gray-700 leading-relaxed">
-                  <h5 className="font-playfair text-xl text-text-dark mb-4">
-                    Skills
-                  </h5>
+                  <h5 className="text-xl text-text-dark mb-4">Skills</h5>
                   <ul className="space-y-2">
                     {allExperiences[selectedExperience].skills.map(
                       (skill, index) => (
@@ -190,7 +188,8 @@ const Experience = () => {
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "flex-end",
-                        fontFamily: "Playfair Display",
+                        fontFamily:
+                          "var(--font-poppins), system-ui, sans-serif",
                         fontSize: "1.125rem",
                         color: "#1a1a1a",
                         paddingRight: "2rem",
@@ -257,7 +256,7 @@ const Experience = () => {
                           />
                         </div>
                         <div className="text-left">
-                          <h3 className="font-playfair text-2xl text-text-dark tracking-wide">
+                          <h3 className="text-2xl text-text-dark tracking-wide">
                             {exp.company}
                           </h3>
                           <p className="font-inter text-lg text-gray-600 mt-1">

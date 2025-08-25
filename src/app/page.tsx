@@ -138,14 +138,14 @@ export default function Home() {
           <div className="w-full max-w-[74rem] flex flex-col">
             <div className="relative mb-16 text-right">
               <div className="absolute inset-0 flex flex-col items-end justify-center pointer-events-none">
-                <h2 className="font-playfair text-5xl lg:text-6xl font-normal text-white/20 tracking-wide transform -translate-y-8">
+                <h2 className="text-5xl lg:text-6xl font-normal text-white/20 tracking-wide transform -translate-y-8">
                   ABOUT ME
                 </h2>
-                <h2 className="font-playfair text-5xl lg:text-6xl font-normal text-white/20 tracking-wide transform translate-y-8">
+                <h2 className="text-5xl lg:text-6xl font-normal text-white/20 tracking-wide transform translate-y-8">
                   ABOUT ME
                 </h2>
               </div>
-              <h2 className="font-playfair text-5xl lg:text-6xl text-black relative z-10">
+              <h2 className="text-5xl lg:text-6xl text-black relative z-10">
                 ABOUT ME
               </h2>
             </div>
@@ -160,11 +160,11 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-160 text-right">
-                <h3 className="font-playfair text-xl lg:text-2xl text-black leading-relaxed mb-12">
+                <h3 className="text-xl lg:text-2xl text-black leading-relaxed mb-12">
                   {renderWords(visibleFirstWords)}
                 </h3>
                 {visibleSecondWords.length > 0 && (
-                  <p className="font-playfair text-xl lg:text-2xl text-black leading-relaxed">
+                  <p className="text-xl lg:text-2xl text-black leading-relaxed">
                     {renderWords(visibleSecondWords)}
                   </p>
                 )}

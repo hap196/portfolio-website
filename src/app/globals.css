@@ -25,9 +25,7 @@
 
 @theme inline {
   --color-foreground: var(--foreground);
-  --font-playfair: var(--font-playfair);
-  --font-inter: var(--font-inter);
-  --font-send-flowers: var(--font-send-flowers);
+  --font-poppins: var(--font-poppins);
 
   --color-text-dark: var(--text-dark);
   --color-text-light: var(--text-light);
@@ -45,7 +43,7 @@
 body {
   background: transparent;
   color: var(--foreground);
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: var(--font-poppins), system-ui, sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
   min-height: 100vh;
