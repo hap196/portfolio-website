@@ -128,35 +128,6 @@ const Experience = () => {
         </div>
 
         <div className="flex items-start gap-42 z-10">
-          <div className="w-128 flex items-center justify-center min-h-[600px]">
-            {selectedExperience !== null && (
-              <div className="w-full">
-                <h4 className="text-3xl text-text-dark mb-6">
-                  {allExperiences[selectedExperience].company}
-                </h4>
-                <div className="font-inter text-lg text-gray-700 leading-relaxed space-y-4 mb-8">
-                  {allExperiences[selectedExperience].description.map(
-                    (desc, index) => (
-                      <p key={index}>{desc}</p>
-                    )
-                  )}
-                </div>
-                <div className="font-inter text-lg text-gray-700 leading-relaxed">
-                  <h5 className="text-xl text-text-dark mb-4">Skills</h5>
-                  <ul className="space-y-2">
-                    {allExperiences[selectedExperience].skills.map(
-                      (skill, index) => (
-                        <li key={index} className="flex items-start gap-3">
-                          <span className="text-text-dark mt-1">◆</span>
-                          <span>{skill}</span>
-                        </li>
-                      )
-                    )}
-                  </ul>
-                </div>
-              </div>
-            )}
-          </div>
           <div className="w-160">
             <Timeline
               position="right"
@@ -259,11 +230,8 @@ const Experience = () => {
                           <h3 className="text-2xl text-text-dark tracking-wide">
                             {exp.company}
                           </h3>
-                          <p className="font-inter text-lg text-gray-600 mt-1">
+                          <p className="text-lg text-gray-600 mt-1">
                             {exp.role}
-                          </p>
-                          <p className="font-inter text-sm text-gray-500 mt-1">
-                            {exp.location}
                           </p>
                         </div>
                       </div>
@@ -272,6 +240,53 @@ const Experience = () => {
                 );
               })}
             </Timeline>
+          </div>
+          <div className="w-128 flex items-center justify-center min-h-[600px]">
+            {selectedExperience !== null && (
+              <div className="w-full backdrop-blur-md bg-white/10 border-2 border-white/30 rounded-2xl p-8 shadow-lg">
+                <div className="mb-8">
+                  <h4 className="text-4xl font-semibold text-text-dark mb-3 tracking-wide">
+                    {allExperiences[selectedExperience].company}
+                  </h4>
+                  <h5 className="text-xl font-medium text-gray-600 mb-2">
+                    {allExperiences[selectedExperience].role}
+                  </h5>
+                  <p className="text-lg text-gray-500 flex items-center gap-2">
+                    {allExperiences[selectedExperience].location}
+                  </p>
+                </div>
+
+                <div className="mb-8">
+                  <div className="text-gray-700 leading-relaxed space-y-3">
+                    {allExperiences[selectedExperience].description.map(
+                      (desc, index) => (
+                        <p key={index} className="text-base leading-relaxed">
+                          {desc}
+                        </p>
+                      )
+                    )}
+                  </div>
+                </div>
+
+                <div>
+                  <h6 className="text-lg font-semibold text-text-dark mb-4 tracking-wide">
+                    Technologies Used
+                  </h6>
+                  <div className="flex flex-wrap gap-3">
+                    {allExperiences[selectedExperience].skills.map(
+                      (skill, index) => (
+                        <span
+                          key={index}
+                          className="px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-sm font-medium text-text-dark hover:bg-white/30 transition-all duration-200"
+                        >
+                          {skill}
+                        </span>
+                      )
+                    )}
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
