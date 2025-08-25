@@ -265,47 +265,59 @@ const Experience = () => {
             </Timeline>
           </div>
           <div className="w-128 flex items-start justify-center">
-            {selectedExperience !== null && (
-              <div className="w-full h-[600px] backdrop-blur-md bg-white/10 border-2 border-white/30 rounded-2xl p-8 shadow-lg">
-                <div className="mb-16">
-                  <h4 className="text-4xl font-semibold text-text-dark mb-3 tracking-wide">
-                    {allExperiences[selectedExperience].company}
-                  </h4>
-                  <h5 className="text-xl font-medium text-gray-600 mb-2">
-                    {allExperiences[selectedExperience].role}
-                  </h5>
-                  <p className="text-lg text-gray-500 flex items-center gap-2">
-                    {allExperiences[selectedExperience].location}
-                  </p>
-                </div>
-
-                <div className="mb-16 flex-1">
-                  <div className="text-gray-700 leading-relaxed space-y-3">
-                    <p className="text-base leading-relaxed">
-                      {allExperiences[selectedExperience].description}
+            <div
+              className={`w-full h-[600px] backdrop-blur-md bg-white/10 border-2 border-white/30 rounded-2xl p-8 shadow-lg transition-all duration-[200ms] ease ${
+                selectedExperience !== null ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              {selectedExperience !== null && (
+                <div
+                  key={selectedExperience}
+                  className="opacity-0 animate-fade-in"
+                                     style={{
+                     animation: "fadeIn 200ms ease-in-out forwards",
+                   }}
+                >
+                  <div className="mb-16">
+                    <h4 className="text-4xl font-semibold text-text-dark mb-3 tracking-wide">
+                      {allExperiences[selectedExperience].company}
+                    </h4>
+                    <h5 className="text-xl font-medium text-gray-600 mb-2">
+                      {allExperiences[selectedExperience].role}
+                    </h5>
+                    <p className="text-lg text-gray-500 flex items-center gap-2">
+                      {allExperiences[selectedExperience].location}
                     </p>
                   </div>
-                </div>
 
-                <div>
-                  <h6 className="text-lg font-semibold text-text-dark mb-4 tracking-wide">
-                    Technologies Used
-                  </h6>
-                  <div className="flex flex-wrap gap-3">
-                    {allExperiences[selectedExperience].skills.map(
-                      (skill, index) => (
-                        <span
-                          key={index}
-                          className="px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-sm font-medium text-text-dark hover:bg-white/30 transition-all duration-200"
-                        >
-                          {skill}
-                        </span>
-                      )
-                    )}
+                  <div className="mb-16 flex-1">
+                    <div className="text-gray-700 leading-relaxed space-y-3">
+                      <p className="text-base leading-relaxed">
+                        {allExperiences[selectedExperience].description}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h6 className="text-lg font-semibold text-text-dark mb-4 tracking-wide">
+                      Technologies Used
+                    </h6>
+                    <div className="flex flex-wrap gap-3">
+                      {allExperiences[selectedExperience].skills.map(
+                        (skill, index) => (
+                          <span
+                            key={index}
+                            className="px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-sm font-medium text-text-dark hover:bg-white/30 transition-all duration-200"
+                          >
+                            {skill}
+                          </span>
+                        )
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
           </div>
         </div>
       </div>
