@@ -55,18 +55,18 @@ const Projects = () => {
   return (
     <div className="flex flex-col justify-center h-full px-16">
       <div className="w-full max-w-[74rem] flex flex-col mx-auto">
-        <div className="relative mb-24 text-right">
-          <div className="absolute inset-0 flex flex-col items-end justify-center pointer-events-none">
-            <h1 className="font-playfair text-5xl lg:text-6xl font-normal text-white/20 tracking-wide transform -translate-y-8">
+        <div className="mb-24 text-right">
+          <div className="pointer-events-none flex flex-col items-end">
+            <h1 className="font-playfair text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
               PROJECTS
             </h1>
-            <h1 className="font-playfair text-5xl lg:text-6xl font-normal text-white/20 tracking-wide transform translate-y-8">
+            <h1 className="font-playfair text-5xl lg:text-6xl text-text-dark whitespace-nowrap">
+              PROJECTS
+            </h1>
+            <h1 className="font-playfair text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
               PROJECTS
             </h1>
           </div>
-          <h1 className="font-playfair text-5xl lg:text-6xl text-text-dark relative z-10">
-            PROJECTS
-          </h1>
         </div>
 
         <div className="z-10 grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -113,18 +113,18 @@ const Experience = () => {
   return (
     <div className="flex flex-col justify-center h-full px-16">
       <div className="w-full max-w-[74rem] flex flex-col">
-        <div className="relative mb-16 text-left">
-          <div className="absolute inset-0 flex flex-col items-start justify-center pointer-events-none">
-            <h1 className="font-playfair text-5xl lg:text-6xl font-normal text-white/20 tracking-wide transform -translate-y-8">
+        <div className="mb-16 text-left">
+          <div className="pointer-events-none flex flex-col items-start">
+            <h1 className="font-playfair text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
               EXPERIENCE
             </h1>
-            <h1 className="font-playfair text-5xl lg:text-6xl font-normal text-white/20 tracking-wide transform translate-y-8">
+            <h1 className="font-playfair text-5xl lg:text-6xl text-text-dark whitespace-nowrap">
+              EXPERIENCE
+            </h1>
+            <h1 className="font-playfair text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
               EXPERIENCE
             </h1>
           </div>
-          <h1 className="font-playfair text-5xl lg:text-6xl text-text-dark relative z-10">
-            EXPERIENCE
-          </h1>
         </div>
 
         <div className="flex items-start gap-42 z-10">
