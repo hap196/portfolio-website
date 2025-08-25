@@ -13,7 +13,7 @@ interface ExperienceItem {
   logoPath: string;
   timeline: string;
   location: string;
-  description: string[];
+  description: string;
   skills: string[];
 }
 
@@ -32,9 +32,8 @@ const Experience = () => {
       logoPath: "/experience/apple-logo.svg",
       timeline: "May 2025",
       location: "Austin, TX",
-      description: [
+      description:
         "Deployed an end-to-end solution for automating business intelligence for 10+ teams, already in active use",
-      ],
       skills: ["Python", "LangChain", "AWS", "Snowflake", "FastAPI"],
     },
     {
@@ -43,9 +42,8 @@ const Experience = () => {
       logoPath: "/experience/mitre-logo.png",
       timeline: "May 2024",
       location: "Mclean, VA",
-      description: [
+      description:
         "Shipped features for a full-stack MERN web app serving 10k+ Air Force personnel",
-      ],
       skills: [
         "JavaScript",
         "React.js",
@@ -62,9 +60,8 @@ const Experience = () => {
       logoPath: "/experience/media-lab-logo.png",
       timeline: "Feb 2024",
       location: "Cambridge, MA",
-      description: [
+      description:
         "Worked on a Python platform for supply chain management, helping save over $10k annually in procurement costs",
-      ],
       skills: ["Python", "Dash", "Firebase"],
     },
     {
@@ -73,9 +70,8 @@ const Experience = () => {
       logoPath: "/experience/appdev-logo.svg",
       timeline: "June 2024",
       location: "Cambridge, MA",
-      description: [
+      description:
         "Founded MIT's mobile and web development club with 50+ members",
-      ],
       skills: [
         "TypeScript",
         "React.js",
@@ -92,9 +88,8 @@ const Experience = () => {
       logoPath: "/experience/aim-logo.svg",
       timeline: "May 2024",
       location: "Cambridge, MA",
-      description: [
+      description:
         "Co-led project accelerator for MIT's largest undergraduate AI club",
-      ],
       skills: ["Python", "PyTorch", "TensorFlow"],
     },
     {
@@ -103,9 +98,8 @@ const Experience = () => {
       logoPath: "/experience/harvard-medical-school-logo.png",
       timeline: "Aug 2023",
       location: "Boston, MA",
-      description: [
+      description:
         "Conducted research under Professor Debora Marks, developing machine learning models and algorithms to predict antibody-antigen interactions",
-      ],
       skills: ["Python", "BioPython", "PyTorch", "PyMOL"],
     },
   ];
@@ -144,7 +138,16 @@ const Experience = () => {
               {allExperiences.map((exp, index) => {
                 const isSelected = selectedExperience === index;
                 const isHovered = hoveredExperience === index;
-                const shouldGlow = isSelected || isHovered;
+                const isPreviousToSelected =
+                  selectedExperience !== null && index < selectedExperience;
+                const shouldGlow = isSelected;
+                const shouldBeYellow =
+                  isSelected || isHovered || isPreviousToSelected;
+
+                const isConnectedAbove =
+                  selectedExperience !== null && index <= selectedExperience;
+                const isConnectedBelow =
+                  selectedExperience !== null && index < selectedExperience;
 
                 return (
                   <TimelineItem
@@ -178,7 +181,16 @@ const Experience = () => {
                       }}
                     >
                       <TimelineConnector
-                        sx={{ backgroundColor: "#9ca3af", flex: "1 1 auto" }}
+                        sx={{
+                          backgroundColor: isConnectedAbove
+                            ? "rgb(254, 240, 138)"
+                            : "#9ca3af",
+                          flex: "1 1 auto",
+                          transition: "all 0.4s ease",
+                          boxShadow: isConnectedAbove
+                            ? "0 0 8px rgba(254, 240, 138, 0.6)"
+                            : "none",
+                        }}
                       />
                       <TimelineDot
                         sx={{
@@ -197,16 +209,27 @@ const Experience = () => {
                             ? "0 0 20px rgba(254, 240, 138, 1), 0 0 40px rgba(254, 240, 138, 0.7)"
                             : "none",
                           fontSize: "1.5rem",
-                          color: shouldGlow ? "rgb(254, 240, 138)" : "#1a1a1a",
+                          color: shouldBeYellow
+                            ? "rgb(254, 240, 138)"
+                            : "#1a1a1a",
                           margin: 0,
                           flex: "0 0 auto",
-                          transition: "all 0.3s ease",
+                          transition: "all 0.15s ease",
                         }}
                       >
                         ✦
                       </TimelineDot>
                       <TimelineConnector
-                        sx={{ backgroundColor: "#9ca3af", flex: "1 1 auto" }}
+                        sx={{
+                          backgroundColor: isConnectedBelow
+                            ? "rgb(254, 240, 138)"
+                            : "#9ca3af",
+                          flex: "1 1 auto",
+                          transition: "all 0.4s ease",
+                          boxShadow: isConnectedBelow
+                            ? "0 0 8px rgba(254, 240, 138, 0.6)"
+                            : "none",
+                        }}
                       />
                     </TimelineSeparator>
                     <TimelineContent
@@ -241,10 +264,10 @@ const Experience = () => {
               })}
             </Timeline>
           </div>
-          <div className="w-128 flex items-center justify-center min-h-[600px]">
+          <div className="w-128 flex items-start justify-center">
             {selectedExperience !== null && (
-              <div className="w-full backdrop-blur-md bg-white/10 border-2 border-white/30 rounded-2xl p-8 shadow-lg">
-                <div className="mb-8">
+              <div className="w-full h-[600px] backdrop-blur-md bg-white/10 border-2 border-white/30 rounded-2xl p-8 shadow-lg">
+                <div className="mb-16">
                   <h4 className="text-4xl font-semibold text-text-dark mb-3 tracking-wide">
                     {allExperiences[selectedExperience].company}
                   </h4>
@@ -256,15 +279,11 @@ const Experience = () => {
                   </p>
                 </div>
 
-                <div className="mb-8">
+                <div className="mb-16 flex-1">
                   <div className="text-gray-700 leading-relaxed space-y-3">
-                    {allExperiences[selectedExperience].description.map(
-                      (desc, index) => (
-                        <p key={index} className="text-base leading-relaxed">
-                          {desc}
-                        </p>
-                      )
-                    )}
+                    <p className="text-base leading-relaxed">
+                      {allExperiences[selectedExperience].description}
+                    </p>
                   </div>
                 </div>
 
