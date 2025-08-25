@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import Roles from "@/components/Roles";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -116,7 +117,7 @@ export default function Home() {
     <div className="relative">
       <div className="mesh-gradient-background"></div>
 
-      <Parallax ref={parallaxRef} pages={6} style={{ height: "100vh" }}>
+      <Parallax ref={parallaxRef} pages={7} style={{ height: "100vh" }}>
         {/* Hero */}
         <ParallaxLayer
           offset={0}
@@ -188,6 +189,15 @@ export default function Home() {
           style={{ ...alignCenter, justifyContent: "center" }}
         >
           <Projects />
+        </ParallaxLayer>
+
+        {/* Contact */}
+        <ParallaxLayer
+          offset={6}
+          speed={0}
+          style={{ ...alignCenter, justifyContent: "center" }}
+        >
+          <Contact />
         </ParallaxLayer>
       </Parallax>
     </div>
