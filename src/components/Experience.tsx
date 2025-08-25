@@ -107,8 +107,8 @@ const Experience = () => {
   return (
     <div className="flex flex-col justify-center h-full px-16">
       <div className="w-full max-w-[74rem] flex flex-col">
-        <div className="mb-16 text-left">
-          <div className="pointer-events-none flex flex-col items-start">
+        <div className="mb-16 text-center md:text-left">
+          <div className="pointer-events-none flex flex-col items-center md:items-start">
             <h1 className="text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
               EXPERIENCE
             </h1>
@@ -274,9 +274,9 @@ const Experience = () => {
                 <div
                   key={selectedExperience}
                   className="opacity-0 animate-fade-in"
-                                     style={{
-                     animation: "fadeIn 200ms ease-in-out forwards",
-                   }}
+                  style={{
+                    animation: "fadeIn 200ms ease-in-out forwards",
+                  }}
                 >
                   <div className="mb-16">
                     <h4 className="text-4xl font-semibold text-text-dark mb-3 tracking-wide">

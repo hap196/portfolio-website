@@ -144,8 +144,8 @@ export default function Home() {
           style={{ ...alignCenter, justifyContent: "center" }}
         >
           <div className="w-full max-w-[74rem] flex flex-col">
-            <div className="relative mb-16 text-right">
-              <div className="absolute inset-0 flex flex-col items-end justify-center pointer-events-none">
+            <div className="relative mb-16 text-center md:text-right">
+              <div className="absolute inset-0 flex flex-col items-center md:items-end justify-center pointer-events-none">
                 <h2 className="text-5xl lg:text-6xl font-normal text-white/20 tracking-wide transform -translate-y-8">
                   ABOUT ME
                 </h2>

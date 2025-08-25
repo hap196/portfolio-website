@@ -92,8 +92,8 @@ const Projects = () => {
   return (
     <div className="flex flex-col justify-center h-full px-16">
       <div className="w-full max-w-[74rem] flex flex-col mx-auto">
-        <div className="mb-24 text-right">
-          <div className="pointer-events-none flex flex-col items-end">
+        <div className="mb-24 text-center md:text-right">
+          <div className="pointer-events-none flex flex-col items-center md:items-end">
             <h1 className="text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
               PROJECTS
             </h1>

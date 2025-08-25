@@ -23,20 +23,20 @@ const Contact = () => {
         <div className="w-full max-w-[74rem] flex flex-col mx-auto text-center">
           <div className="mb-16">
             <div className="pointer-events-none flex flex-col items-center">
-              <h1 className="text-7xl lg:text-8xl font-normal text-white/20 tracking-wide whitespace-nowrap">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-normal text-white/20 tracking-wide whitespace-nowrap">
                 GET IN TOUCH
               </h1>
-              <h1 className="text-7xl lg:text-8xl font-normal text-text-dark tracking-wide whitespace-nowrap">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-normal text-text-dark tracking-wide whitespace-nowrap">
                 GET IN TOUCH
               </h1>
-              <h1 className="text-7xl lg:text-8xl font-normal text-white/20 tracking-wide whitespace-nowrap">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-normal text-white/20 tracking-wide whitespace-nowrap">
                 GET IN TOUCH
               </h1>
             </div>
           </div>
 
           <div className="flex justify-center items-center relative z-10 mt-16">
-            <div className="flex items-center">
+            <div className="flex items-center flex-wrap justify-center">
               {contactLinks.map((link, index) => (
                 <div key={index} className="flex items-center">
                   <a
@@ -45,12 +45,14 @@ const Contact = () => {
                     rel={
                       link.name !== "Email" ? "noopener noreferrer" : undefined
                     }
-                    className="text-2xl text-text-dark tracking-wide hover:text-gray-600 transition-colors duration-10 ease-in-out"
+                    className="text-lg md:text-2xl text-text-dark tracking-wide hover:text-gray-600 transition-colors duration-10 ease-in-out"
                   >
                     {link.name}
                   </a>
                   {index < contactLinks.length - 1 && (
-                    <span className="text-text-dark text-lg mx-8">✦</span>
+                    <span className="text-text-dark text-sm md:text-lg mx-4 md:mx-8">
+                      ✦
+                    </span>
                   )}
                 </div>
               ))}
