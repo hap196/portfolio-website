@@ -36,23 +36,23 @@ const Contact = () => {
           </div>
 
           <div className="flex justify-center items-center relative z-10 mt-16">
-            <div className="flex items-center space-x-8">
+            <div className="flex items-center">
               {contactLinks.map((link, index) => (
-                <React.Fragment key={index}>
+                <div key={index} className="flex items-center">
                   <a
                     href={link.url}
                     target={link.name !== "Email" ? "_blank" : undefined}
                     rel={
                       link.name !== "Email" ? "noopener noreferrer" : undefined
                     }
-                    className="text-2xl text-text-dark tracking-wide hover:text-gray-600 transition-colors duration-200"
+                    className="text-2xl text-text-dark tracking-wide hover:text-gray-600 transition-colors duration-10 ease-in-out"
                   >
                     {link.name}
                   </a>
                   {index < contactLinks.length - 1 && (
-                    <span className="text-text-dark text-lg">✦</span>
+                    <span className="text-text-dark text-lg mx-8">✦</span>
                   )}
-                </React.Fragment>
+                </div>
               ))}
             </div>
           </div>
