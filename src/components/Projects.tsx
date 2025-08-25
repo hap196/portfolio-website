@@ -163,7 +163,7 @@ const Projects = () => {
         </div>
         {hoveredProject !== null && (
           <div
-            className="fixed z-50 pointer-events-none transition-opacity duration-200"
+            className="fixed z-50 pointer-events-none transition-opacity duration-200 -translate-x-1/2 -translate-y-1/2"
             style={{
               left: mousePosition.x,
               top: mousePosition.y,
