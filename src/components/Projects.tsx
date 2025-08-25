@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 interface ProjectItem {
   title: string;
@@ -12,6 +12,11 @@ interface ProjectItem {
 const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [visibleProjects, setVisibleProjects] = useState<boolean[]>(
+    new Array(4).fill(false)
+  );
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const projectsRef = useRef<HTMLDivElement>(null);
 
   const allProjects: ProjectItem[] = [
     {
@@ -52,6 +57,38 @@ const Projects = () => {
     },
   ];
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimated) {
+            setHasAnimated(true);
+            allProjects.forEach((_, index) => {
+              setTimeout(() => {
+                setVisibleProjects((prev) => {
+                  const newState = [...prev];
+                  newState[index] = true;
+                  return newState;
+                });
+              }, (index + 1) * 150);
+            });
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    if (projectsRef.current) {
+      observer.observe(projectsRef.current);
+    }
+
+    return () => {
+      if (projectsRef.current) {
+        observer.unobserve(projectsRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="flex flex-col justify-center h-full px-16">
       <div className="w-full max-w-[74rem] flex flex-col mx-auto">
@@ -69,11 +106,20 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="z-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div
+          ref={projectsRef}
+          className="z-10 grid grid-cols-1 md:grid-cols-2 gap-8"
+        >
           {allProjects.map((project, index) => (
             <div
               key={index}
               className="group relative backdrop-blur-md bg-white/10 border-2 border-white/30 rounded-2xl p-8 transition-all duration-300 hover:bg-white/15 hover:border-white/50 cursor-pointer shadow-lg hover:shadow-xl"
+              style={{
+                opacity: visibleProjects[index] ? 1 : 0,
+                animation: visibleProjects[index]
+                  ? "slideUp 0.2s ease-out forwards"
+                  : "none",
+              }}
               onMouseEnter={(e) => {
                 setHoveredProject(index);
                 setMousePosition({ x: e.clientX, y: e.clientY });
@@ -117,17 +163,17 @@ const Projects = () => {
         </div>
         {hoveredProject !== null && (
           <div
-            className="fixed z-50 pointer-events-none transition-opacity duration-200 -translate-x-1/2 -translate-y-1/2"
+            className="fixed z-50 pointer-events-none transition-opacity duration-200"
             style={{
               left: mousePosition.x,
               top: mousePosition.y,
             }}
           >
-            <div className="backdrop-blur-md bg-white/20 border border-white/30 rounded-lg p-2 shadow-lg">
+            <div className="backdrop-blur-md bg-white/20 border border-white/30 rounded-lg p-3 shadow-lg">
               <img
                 src={allProjects[hoveredProject].image}
                 alt={allProjects[hoveredProject].title}
-                className="w-40 h-24 object-cover rounded"
+                className="w-60 h-36 object-cover rounded"
               />
             </div>
           </div>
