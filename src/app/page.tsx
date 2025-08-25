@@ -117,7 +117,7 @@ export default function Home() {
     <div className="relative">
       <div className="mesh-gradient-background"></div>
 
-      <Parallax ref={parallaxRef} pages={7} style={{ height: "100vh" }}>
+      <Parallax ref={parallaxRef} pages={9} style={{ height: "100vh" }}>
         {/* Hero */}
         <ParallaxLayer
           offset={0}
@@ -132,7 +132,7 @@ export default function Home() {
 
         {/* About */}
         <ParallaxLayer
-          sticky={{ start: 1, end: 3 }}
+          sticky={{ start: 1, end: 5 }}
           style={{ ...alignCenter, justifyContent: "center" }}
         >
           <div className="w-full max-w-[74rem] flex flex-col">
@@ -175,7 +175,7 @@ export default function Home() {
 
         {/* Experience */}
         <ParallaxLayer
-          offset={4}
+          offset={6}
           speed={0}
           style={{ ...alignCenter, justifyContent: "center" }}
         >
@@ -184,7 +184,7 @@ export default function Home() {
 
         {/* Projects */}
         <ParallaxLayer
-          offset={5}
+          offset={7}
           speed={0}
           style={{ ...alignCenter, justifyContent: "center" }}
         >
@@ -193,7 +193,7 @@ export default function Home() {
 
         {/* Contact */}
         <ParallaxLayer
-          offset={6}
+          offset={8}
           speed={0}
           style={{ ...alignCenter, justifyContent: "center" }}
         >

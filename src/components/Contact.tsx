@@ -58,9 +58,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="mt-auto">
+      {/* <div className="mt-auto">
         <Gallery />
-      </div>
+      </div> */}
       <div className="text-center py-8">
         <p className="font-playfair text-gray-500 text-sm">Copyright 2025</p>
       </div>

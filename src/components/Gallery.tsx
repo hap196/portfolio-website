@@ -21,7 +21,7 @@ const Gallery = () => {
 
   const loadMoreImages = () => {
     const currentLength = displayedImages.length;
-    const nextBatch = [];
+    const nextBatch: string[] = [];
 
     for (let i = 0; i < 6; i++) {
       const imageIndex = (currentLength + i) % galleryImages.length;
