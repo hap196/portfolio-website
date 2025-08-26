@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { useEffect, useState, useRef } from "react";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import Hero from "@/components/Hero";
 import Roles from "@/components/Roles";
 import Experience from "@/components/Experience";
@@ -11,7 +11,7 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0);
-  const parallaxRef = useRef<any>(null);
+  const parallaxRef = useRef<IParallax>(null);
   const alignCenter = { display: "flex", alignItems: "center" };
   const lastScrollTime = useRef(0);
   const scrollVelocity = useRef(0);
