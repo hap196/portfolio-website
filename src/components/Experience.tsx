@@ -105,8 +105,8 @@ const Experience = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center h-full">
-      <div className="w-full max-w-[74rem] flex flex-col">
+    <div className="flex flex-col justify-center h-full min-w-[64rem]">
+      <div className="w-full flex flex-col">
         <div className="mb-16 text-center lg:text-left">
           <div className="pointer-events-none flex flex-col items-center lg:items-start px-4 md:px-8 lg:px-16">
             <h1 className="text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
@@ -122,7 +122,7 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center z-10">
-          <div className="w-full lg:w-160 pointer-events-none lg:pointer-events-auto px-4 md:px-8 lg:px-16">
+          <div className="w-full lg:w-160 pointer-events-none lg:pointer-events-auto pl-4 md:pl-8 lg:pl-16 mb-60 md:mb-0">
             <Timeline
               position="right"
               sx={{
@@ -250,10 +250,10 @@ const Experience = () => {
                           />
                         </div>
                         <div className="text-left">
-                          <h3 className="text-2xl text-text-dark tracking-wide">
+                          <h3 className="text-lg md:text-2xl text-text-dark tracking-wide">
                             {exp.company}
                           </h3>
-                          <p className="text-lg text-gray-600 mt-1">
+                          <p className="text-sm text-gray-600 mt-1">
                             {exp.role}
                           </p>
                         </div>
