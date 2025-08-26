@@ -90,7 +90,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center h-full px-16">
+    <div className="flex flex-col justify-center h-full px-4 md:px-8 lg:px-16">
       <div className="w-full max-w-[74rem] flex flex-col mx-auto">
         <div className="mb-24 text-center md:text-right">
           <div className="pointer-events-none flex flex-col items-center md:items-end">

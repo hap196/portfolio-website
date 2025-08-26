@@ -143,7 +143,7 @@ export default function Home() {
           sticky={{ start: 1, end: 5 }}
           style={{ ...alignCenter, justifyContent: "center" }}
         >
-          <div className="w-full max-w-[74rem] flex flex-col">
+          <div className="w-full max-w-[74rem] flex flex-col px-4 md:px-8 lg:px-16">
             <div className="relative mb-16 text-center md:text-right">
               <div className="absolute inset-0 flex flex-col items-center md:items-end justify-center pointer-events-none">
                 <h2 className="text-5xl lg:text-6xl font-normal text-white/20 tracking-wide transform -translate-y-8">

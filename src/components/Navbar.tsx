@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="absolute top-0 left-0 right-0 z-50 px-16 py-8">
+      <nav className="absolute top-0 left-0 right-0 z-50 px-4 md:px-8 lg:px-16 py-8">
         <div className="flex justify-between items-center">
           <Link
             href="/"
