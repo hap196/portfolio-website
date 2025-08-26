@@ -121,8 +121,8 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center z-10">
-          <div className="w-full lg:w-160 pointer-events-none lg:pointer-events-auto pl-4 md:pl-8 lg:pl-16 mb-60 md:mb-0">
+        <div className="flex flex- lg:flex-row items-center lg:items-start justify-center z-10">
+          <div className="w-full lg:w-160 flex justify-center lg:justify-start pointer-events-none items-center justify-center lg:pointer-events-auto pl-4 md:pl-8 lg:pl-16 mb-60 md:mb-0">
             <Timeline
               position="right"
               sx={{
@@ -278,36 +278,36 @@ const Experience = () => {
                     animation: "fadeIn 200ms ease-in-out forwards",
                   }}
                 >
-                  <div className="mb-16">
-                    <h4 className="text-4xl font-semibold text-text-dark mb-3 tracking-wide">
+                  <div className="mb-8 md:mb-12 lg:mb-16">
+                    <h4 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-text-dark mb-2 md:mb-3 tracking-wide">
                       {allExperiences[selectedExperience].company}
                     </h4>
-                    <h5 className="text-xl font-medium text-gray-600 mb-2">
+                    <h5 className="text-lg md:text-xl font-medium text-gray-600 mb-1 md:mb-2">
                       {allExperiences[selectedExperience].role}
                     </h5>
-                    <p className="text-lg text-gray-500 flex items-center gap-2">
+                    <p className="text-base md:text-lg text-gray-500 flex items-center gap-2">
                       {allExperiences[selectedExperience].location}
                     </p>
                   </div>
 
-                  <div className="mb-16 flex-1">
-                    <div className="text-gray-700 leading-relaxed space-y-3">
-                      <p className="text-base leading-relaxed">
+                  <div className="mb-8 md:mb-12 lg:mb-16 flex-1">
+                    <div className="text-gray-700 leading-relaxed space-y-2 md:space-y-3">
+                      <p className="text-sm md:text-base leading-relaxed">
                         {allExperiences[selectedExperience].description}
                       </p>
                     </div>
                   </div>
 
                   <div>
-                    <h6 className="text-lg font-semibold text-text-dark mb-4 tracking-wide">
+                    <h6 className="text-base md:text-lg font-semibold text-text-dark mb-3 md:mb-4 tracking-wide">
                       Technologies Used
                     </h6>
-                    <div className="flex flex-wrap gap-3">
+                    <div className="flex flex-wrap gap-2 md:gap-3">
                       {allExperiences[selectedExperience].skills.map(
                         (skill, index) => (
                           <span
                             key={index}
-                            className="px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-sm font-medium text-text-dark hover:bg-white/30 transition-all duration-200"
+                            className="px-3 md:px-4 py-1.5 md:py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-xs md:text-sm font-medium text-text-dark hover:bg-white/30 transition-all duration-200"
                           >
                             {skill}
                           </span>
