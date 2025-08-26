@@ -144,8 +144,8 @@ export default function Home() {
           style={{ ...alignCenter, justifyContent: "center" }}
         >
           <div className="w-full max-w-[74rem] flex flex-col px-4 md:px-8 lg:px-16">
-            <div className="relative mb-16 text-center md:text-right">
-              <div className="absolute inset-0 flex flex-col items-center md:items-end justify-center pointer-events-none">
+            <div className="relative mb-16 text-center lg:text-right mb-8">
+              <div className="absolute inset-0 flex flex-col items-center lg:items-end justify-center pointer-events-none">
                 <h2 className="text-5xl lg:text-6xl font-normal text-white/20 tracking-wide transform -translate-y-8">
                   ABOUT ME
                 </h2>
@@ -157,9 +157,9 @@ export default function Home() {
                 ABOUT ME
               </h2>
             </div>
-            <div className="flex items-center gap-24 z-10">
-              <div className="w-112">
-                <div className="backdrop-blur-md bg-white/10 border-2 border-white/30 rounded-2xl p-6 shadow-lg">
+            <div className="flex flex-col md:flex-row items-center md:gap-24 gap-12 z-10">
+              <div className="w-full max-w-sm md:w-120 order-2 md:order-1">
+                <div className="backdrop-blur-md bg-white/10 border-2 border-white/30 rounded-2xl p-4 shadow-lg">
                   <img
                     src="/about/apple1.jpeg"
                     alt="Hailey Pan"
@@ -167,7 +167,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="w-160 text-right">
+              <div className="w-full md:w-160 text-center md:text-right order-1 md:order-2 px-4 mt-8 md:mt-0 md:px-0">
                 <h3 className="text-xl lg:text-2xl text-text-dark leading-relaxed mb-12">
                   {renderWords(visibleFirstWords)}
                 </h3>

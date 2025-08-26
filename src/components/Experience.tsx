@@ -105,10 +105,10 @@ const Experience = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center h-full px-16">
+    <div className="flex flex-col justify-center h-full">
       <div className="w-full max-w-[74rem] flex flex-col">
-        <div className="mb-16 text-center md:text-left">
-          <div className="pointer-events-none flex flex-col items-center md:items-start">
+        <div className="mb-16 text-center lg:text-left">
+          <div className="pointer-events-none flex flex-col items-center lg:items-start px-4 md:px-8 lg:px-16">
             <h1 className="text-5xl lg:text-6xl font-normal text-white/20 tracking-wide whitespace-nowrap">
               EXPERIENCE
             </h1>
@@ -121,8 +121,8 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="flex items-start gap-42 z-10">
-          <div className="w-160">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center z-10">
+          <div className="w-full lg:w-160 pointer-events-none lg:pointer-events-auto px-4 md:px-8 lg:px-16">
             <Timeline
               position="right"
               sx={{
@@ -152,7 +152,7 @@ const Experience = () => {
                 return (
                   <TimelineItem
                     key={index}
-                    sx={{ minHeight: "90px", cursor: "pointer" }}
+                    sx={{ minHeight: "90px" }}
                     onMouseEnter={() => setHoveredExperience(index)}
                     onMouseLeave={() => setHoveredExperience(null)}
                     onClick={() => setSelectedExperience(index)}
@@ -264,7 +264,7 @@ const Experience = () => {
               })}
             </Timeline>
           </div>
-          <div className="w-128 flex items-start justify-center">
+          <div className="hidden lg:flex w-128 items-start justify-center px-4 md:px-8 lg:px-16">
             <div
               className={`w-full h-[600px] backdrop-blur-md bg-white/10 border-2 border-white/30 rounded-2xl p-8 shadow-lg transition-all duration-[200ms] ease ${
                 selectedExperience !== null ? "opacity-100" : "opacity-0"
