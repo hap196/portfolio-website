@@ -19,22 +19,31 @@ const Projects = () => {
   const projectsRef = useRef<HTMLDivElement>(null);
 
   const allProjects: ProjectItem[] = [
+    // {
+    //   title: "Orbit",
+    //   description:
+    //     "A full-stack web platform that brings all your work tools into one place and automates workflows with AI agents.",
+    //   tech: ["React.js", "Tailwind.css", "Fetch AI"],
+    //   year: "2025",
+    //   link: "https://orbit.ai",
+    //   image: "/projects/orbit.png",
+    // },
     {
-      title: "Orbit",
+      title: "MapIT",
       description:
-        "A full-stack web platform that brings all your work tools into one place and automates workflows with AI agents.",
-      tech: ["React.js", "Tailwind.css", "Fetch AI"],
+        "A full-stack web app that helps MIT students navigate campus and find event locations.",
+      tech: ["React.js", "TypeScript", "Node.js", "Express.js", "MongoDB"],
       year: "2025",
-      link: "https://orbit.ai",
-      image: "/projects/orbit.png",
+      link: "https://mitmapit.org",
+      image: "/projects/mapit.png",
     },
     {
       title: "MIT Clubs",
       description:
         "A full-stack web app that helps MIT students discover clubs and track recruitment deadlines.",
-      tech: ["React.js", "Node.js", "Express.js", "MongoDB"],
+      tech: ["React.js", "TypeScript", "Node.js", "Express.js", "MongoDB"],
       year: "2025",
-      link: "https://mitclubs.org",
+      link: "https://github.com/appdev-at-mit/mit-clubs",
       image: "/projects/mitclubs.jpg",
     },
     {
