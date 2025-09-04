@@ -43,7 +43,7 @@ const Projects = () => {
         "A full-stack web app that helps MIT students discover clubs and track recruitment deadlines.",
       tech: ["React.js", "TypeScript", "Node.js", "Express.js", "MongoDB"],
       year: "2025",
-      link: "https://github.com/appdev-at-mit/mit-clubs",
+      link: "https://mitclubs.com/",
       image: "/projects/mitclubs.jpg",
     },
     {
