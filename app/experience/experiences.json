@@ -1,0 +1,60 @@
+[
+  {
+    "company": "Apple",
+    "role": "Software Engineer Intern",
+    "timeline": "May 2025 - Aug 2025",
+    "location": "Austin, TX",
+    "skills": ["Python", "LangChain", "AWS", "Snowflake", "FastAPI"]
+  },
+  {
+    "company": "MITRE",
+    "role": "Software Engineer Intern",
+    "timeline": "May 2024 - Apr 2025",
+    "location": "Mclean, VA",
+    "skills": [
+      "JavaScript",
+      "React.js",
+      "Express.js",
+      "Node.js",
+      "PostgreSQL",
+      "AWS",
+      "Docker"
+    ]
+  },
+  {
+    "company": "MIT Media Lab",
+    "role": "Software Developer Intern",
+    "timeline": "Feb 2024 - May 2024",
+    "location": "Cambridge, MA",
+    "skills": ["Python", "Dash", "Firebase"]
+  },
+  {
+    "company": "AppDev @ MIT",
+    "role": "Founder and Co-President",
+    "timeline": "June 2024 - present",
+    "location": "Cambridge, MA",
+    "skills": [
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "Express.js",
+      "Node.js",
+      "MongoDB",
+      "AWS"
+    ]
+  },
+  {
+    "company": "AI @ MIT",
+    "role": "Co-President of Labs",
+    "timeline": "May 2024 - present",
+    "location": "Cambridge, MA",
+    "skills": ["Python", "PyTorch", "TensorFlow"]
+  },
+  {
+    "company": "Harvard Medical School",
+    "role": "Undergraduate Researcher",
+    "timeline": "Aug 2023 - June 2024",
+    "location": "Boston, MA",
+    "skills": ["Python", "BioPython", "PyTorch", "PyMOL"]
+  }
+]

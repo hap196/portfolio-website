@@ -1,9 +1,10 @@
 import Socials from "./components/Socials";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[var(--color-background)] pt-28">
-      <div className="max-w-3xl px-10 container mx-auto px-8 py-12">
+    <main className="min-h-screen bg-[var(--color-background)] pt-28 flex flex-col">
+      <div className="max-w-3xl px-10 container mx-auto px-8 py-12 flex-grow">
         <h1 className="text-4xl font-light text-[var(--color-text-primary)] font-serif"></h1>
         <p className="text-lg text-[var(--color-text-secondary)] font-serif">
           Hi! I'm an undergraduate computer science student at MIT. I'm excited
@@ -50,6 +51,7 @@ export default function Home() {
         </p>
         <Socials />
       </div>
+      <Footer />
     </main>
   );
 }
