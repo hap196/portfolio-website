@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Hailey Pan",
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className="min-h-screen bg-[var(--color-background)]">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
