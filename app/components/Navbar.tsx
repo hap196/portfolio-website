@@ -19,7 +19,7 @@ export default function Navbar() {
                 key={item}
                 href={`/${item.toLowerCase()}`}
                 onClick={() => setActiveItem(item)}
-                className="relative px-4 py-2"
+                className="relative px-4 py-2 group"
                 style={{
                   textDecoration: "none",
                   marginRight: index < leftNavItems.length - 1 ? "1.5rem" : "0",
@@ -34,15 +34,24 @@ export default function Navbar() {
                 >
                   {item}
                 </span>
-                {activeItem === item && (
-                  <span className="absolute -inset-x-5 -inset-y-2 border-2 border-[var(--color-text-primary)] rounded-full -z-10" />
-                )}
+                <span
+                  className={`absolute -inset-x-2 -inset-y-0.5 bg-[var(--color-border)] rounded -z-10 transition-opacity ${
+                    activeItem === item
+                      ? "opacity-50"
+                      : "opacity-0 group-hover:opacity-30"
+                  }`}
+                />
               </Link>
             ))}
           </div>
 
-          <Link href="/" style={{ margin: "0 3rem", textDecoration: "none" }}>
-            <h1 className="text-4xl font-light italic text-[var(--color-text-primary)] tracking-wide whitespace-nowrap font-['Playfair_Display',Georgia,serif]">
+          <Link
+            href="/"
+            style={{ margin: "0 3rem", textDecoration: "none" }}
+            onClick={() => setActiveItem("")}
+            className="group"
+          >
+            <h1 className="text-4xl font-light italic text-[var(--color-text-primary)] tracking-wide whitespace-nowrap font-['Playfair_Display',Georgia,serif] transition-opacity group-hover:opacity-70">
               Hailey Pan
             </h1>
           </Link>
@@ -53,7 +62,7 @@ export default function Navbar() {
                 key={item}
                 href={`/${item.toLowerCase()}`}
                 onClick={() => setActiveItem(item)}
-                className="relative px-4 py-2"
+                className="relative px-4 py-2 group"
                 style={{
                   textDecoration: "none",
                   marginLeft: index > 0 ? "1.5rem" : "0",
@@ -68,17 +77,25 @@ export default function Navbar() {
                 >
                   {item}
                 </span>
-                {activeItem === item && (
-                  <span className="absolute -inset-x-5 -inset-y-2 border-2 border-[var(--color-text-primary)] rounded-full -z-10" />
-                )}
+                <span
+                  className={`absolute -inset-x-2 -inset-y-0.5 bg-[var(--color-border)] rounded -z-10 transition-opacity ${
+                    activeItem === item
+                      ? "opacity-50"
+                      : "opacity-0 group-hover:opacity-30"
+                  }`}
+                />
               </Link>
             ))}
           </div>
         </div>
 
         <div className="md:hidden flex flex-col items-center space-y-6">
-          <Link href="/" className="no-underline">
-            <h1 className="text-4xl font-light italic text-[var(--color-text-primary)] tracking-wide whitespace-nowrap font-['Playfair_Display',Georgia,serif] text-center">
+          <Link
+            href="/"
+            className="no-underline group"
+            onClick={() => setActiveItem("")}
+          >
+            <h1 className="text-4xl font-light italic text-[var(--color-text-primary)] tracking-wide whitespace-nowrap font-['Playfair_Display',Georgia,serif] text-center transition-opacity group-hover:opacity-70">
               Hailey Pan
             </h1>
           </Link>
@@ -89,7 +106,7 @@ export default function Navbar() {
                 key={item}
                 href={`/${item.toLowerCase()}`}
                 onClick={() => setActiveItem(item)}
-                className="relative px-4 py-2 no-underline"
+                className="relative px-4 py-2 no-underline group"
               >
                 <span
                   className={`text-lg font-light tracking-wide transition-all font-serif ${
@@ -100,9 +117,13 @@ export default function Navbar() {
                 >
                   {item}
                 </span>
-                {activeItem === item && (
-                  <span className="absolute -inset-x-5 -inset-y-2 border-2 border-[var(--color-text-primary)] rounded-full -z-10" />
-                )}
+                <span
+                  className={`absolute -inset-x-2 -inset-y-0.5 bg-[var(--color-border)] rounded -z-10 transition-opacity ${
+                    activeItem === item
+                      ? "opacity-50"
+                      : "opacity-0 group-hover:opacity-30"
+                  }`}
+                />
               </Link>
             ))}
           </div>
