@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
+import { useState } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
-  const [activeItem, setActiveItem] = useState('');
+  const [activeItem, setActiveItem] = useState("");
 
-  const leftNavItems = ['about', 'experience'];
-  const rightNavItems = ['projects', 'contact'];
+  const leftNavItems = ["experience", "projects"];
+  const rightNavItems = ["writing", "contact"];
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-[var(--color-background)] border-b border-[var(--color-border)] py-8 px-8 z-50">
@@ -20,16 +20,16 @@ export default function Navbar() {
                 href={`/${item.toLowerCase()}`}
                 onClick={() => setActiveItem(item)}
                 className="relative px-4 py-2"
-                style={{ 
-                  textDecoration: 'none',
-                  marginRight: index < leftNavItems.length - 1 ? '1.5rem' : '0'
+                style={{
+                  textDecoration: "none",
+                  marginRight: index < leftNavItems.length - 1 ? "1.5rem" : "0",
                 }}
               >
                 <span
                   className={`text-lg font-light tracking-wide transition-all font-serif ${
                     activeItem === item
-                      ? 'text-[var(--color-text-primary)]'
-                      : 'text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]'
+                      ? "text-[var(--color-text-primary)]"
+                      : "text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]"
                   }`}
                 >
                   {item}
@@ -41,7 +41,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          <Link href="/" style={{ margin: '0 3rem', textDecoration: 'none' }}>
+          <Link href="/" style={{ margin: "0 3rem", textDecoration: "none" }}>
             <h1 className="text-4xl font-light italic text-[var(--color-text-primary)] tracking-wide whitespace-nowrap font-['Playfair_Display',Georgia,serif]">
               Hailey Pan
             </h1>
@@ -54,16 +54,16 @@ export default function Navbar() {
                 href={`/${item.toLowerCase()}`}
                 onClick={() => setActiveItem(item)}
                 className="relative px-4 py-2"
-                style={{ 
-                  textDecoration: 'none',
-                  marginLeft: index > 0 ? '1.5rem' : '0'
+                style={{
+                  textDecoration: "none",
+                  marginLeft: index > 0 ? "1.5rem" : "0",
                 }}
               >
                 <span
                   className={`text-lg font-light tracking-wide transition-all font-serif ${
                     activeItem === item
-                      ? 'text-[var(--color-text-primary)]'
-                      : 'text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]'
+                      ? "text-[var(--color-text-primary)]"
+                      : "text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]"
                   }`}
                 >
                   {item}
@@ -94,8 +94,8 @@ export default function Navbar() {
                 <span
                   className={`text-lg font-light tracking-wide transition-all font-serif ${
                     activeItem === item
-                      ? 'text-[var(--color-text-primary)]'
-                      : 'text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]'
+                      ? "text-[var(--color-text-primary)]"
+                      : "text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]"
                   }`}
                 >
                   {item}
