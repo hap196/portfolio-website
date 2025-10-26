@@ -16,7 +16,15 @@ export default function ProjectCard({
   image,
 }: ProjectCardProps) {
   return (
-    <div className="bg-[var(--color-border)]/40 rounded-lg overflow-hidden max-w-md">
+    <div className="bg-[var(--color-border)]/40 rounded-lg overflow-hidden max-w-md relative group hover:scale-105 transition-transform duration-200 cursor-pointer">
+      {link && (
+        <a
+          href={link}
+          className="absolute inset-0 z-10"
+          target="_blank"
+          rel="noopener noreferrer"
+        />
+      )}
       {image ? (
         <img src={image} alt={title} className="w-full h-48 object-cover" />
       ) : (
@@ -29,23 +37,12 @@ export default function ProjectCard({
       <div className="p-6">
         <div className="flex items-center justify-between mb-3">
           <h3 className="text-xl font-medium text-[var(--color-text-primary)] font-serif">
-            {link ? (
-              <a
-                href={link}
-                className="hover:underline decoration-dashed underline-offset-4"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {title}
-              </a>
-            ) : (
-              title
-            )}
+            {title}
           </h3>
           {github && (
             <a
               href={github}
-              className="text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors"
+              className="text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors relative z-20"
               target="_blank"
               rel="noopener noreferrer"
             >
