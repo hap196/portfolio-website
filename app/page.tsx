@@ -24,8 +24,7 @@ export default function Home() {
         <p className="text-lg text-[var(--color-text-primary)] font-serif mt-8">
           Previously, I worked on AI agents at Apple and frontend infrastructure
           at TikTok. Beyond software engineering, I'm interested in the
-          applications of AI and explored this through computational biology
-          research at the{" "}
+          applications of AI and explored this through research at the{" "}
           <a
             href="https://www.deboramarkslab.com/"
             className="text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] underline decoration-dashed underline-offset-4 transition-colors"
@@ -37,17 +36,17 @@ export default function Home() {
           .
         </p>
         <p className="text-lg text-[var(--color-text-primary)] font-serif mt-8">
-          In my free time, I enjoy reading, writing, and taking photos on my
-          camera. I also love hackathons (both competing and{" "}
+          In my free time, I love to read, write, and take photos on my camera.
+          I also compete in (and{" "}
           <a
             href="https://hackmit.org/"
             className="text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] underline decoration-dashed underline-offset-4 transition-colors"
             target="_blank"
             rel="noopener noreferrer"
           >
-            organizing
+            organize
           </a>
-          )!
+          ) hackathons!
         </p>
         <Socials />
       </div>
