@@ -1,5 +1,12 @@
 [
   {
+    "company": "TikTok",
+    "role": "Software Engineer Intern",
+    "timeline": "Sep 2025 - Dec 2025",
+    "location": "Bellevue, WA",
+    "skills": ["TypeScript", "React.js"]
+  },
+  {
     "company": "Apple",
     "role": "Software Engineer Intern",
     "timeline": "May 2025 - Aug 2025",
@@ -29,7 +36,7 @@
     "skills": ["Python", "Dash", "Firebase"]
   },
   {
-    "company": "AppDev @ MIT",
+    "company": "AppDev@MIT",
     "role": "Founder and Co-President",
     "timeline": "June 2024 - present",
     "location": "Cambridge, MA",
@@ -44,7 +51,7 @@
     ]
   },
   {
-    "company": "AI @ MIT",
+    "company": "AI@MIT",
     "role": "Co-President",
     "timeline": "May 2024 - present",
     "location": "Cambridge, MA",
