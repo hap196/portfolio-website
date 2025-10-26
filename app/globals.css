@@ -3,13 +3,21 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  
-  /* Custom color palette */
   --color-background: #E8DCC4;
   --color-border: #C4B5A0;
   --color-text-primary: #2B2820;
   --color-text-secondary: #5A5247;
   --color-accent: #C4B5A0;
+}
+
+[data-theme="dark"] {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --color-background: #1a1612;
+  --color-border: #3d3429;
+  --color-text-primary: #f2ede0;
+  --color-text-secondary: #a69b87;
+  --color-accent: #6b5d4a;
 }
 
 @theme inline {
@@ -37,3 +45,4 @@ body {
     text-decoration: none;
   }
 }
+

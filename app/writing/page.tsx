@@ -8,7 +8,7 @@ export default function Writing() {
           Writing
         </h1>
 
-        <p className="text-lg text-[var(--color-text-secondary)] font-serif">
+        <p className="text-lg text-[var(--color-text-primary)] font-serif">
           coming soon...
         </p>
       </div>
