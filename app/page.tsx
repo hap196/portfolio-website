@@ -12,7 +12,7 @@ export default function Home() {
           face. At the same time, I greatly enjoy{" "}
           <a
             href="https://www.mitappdev.com/"
-            className="text-[var(--color-text-primary)] underline decoration-dashed underline-offset-4"
+            className="text-[var(--color-text-primary)] hover:text-[var(--color-accent)] underline decoration-dashed underline-offset-4 transition-colors"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -28,7 +28,7 @@ export default function Home() {
           research at the{" "}
           <a
             href="https://www.deboramarkslab.com/"
-            className="text-[var(--color-text-primary)] underline decoration-dashed underline-offset-4"
+            className="text-[var(--color-text-primary)] hover:text-[var(--color-accent)] underline decoration-dashed underline-offset-4 transition-colors"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -41,7 +41,7 @@ export default function Home() {
           camera. I also love hackathons (both competing and{" "}
           <a
             href="https://hackmit.org/"
-            className="text-[var(--color-text-primary)] underline decoration-dashed underline-offset-4"
+            className="text-[var(--color-text-primary)] hover:text-[var(--color-accent)] underline decoration-dashed underline-offset-4 transition-colors"
             target="_blank"
             rel="noopener noreferrer"
           >
