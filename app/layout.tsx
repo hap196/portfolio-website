@@ -5,7 +5,26 @@ import { ThemeProvider } from "./context/ThemeContext";
 
 export const metadata: Metadata = {
   title: "Hailey Pan",
-  description: "Personal Website",
+  description:
+    "MIT undergraduate studying computer science with experience in software engineering",
+  keywords: [
+    "Hailey Pan",
+    "MIT",
+    "computer science",
+    "software engineer",
+    "AI",
+    "AppDev@MIT",
+  ],
+  authors: [{ name: "Hailey Pan" }],
+  creator: "Hailey Pan",
+  openGraph: {
+    title: "Hailey Pan",
+    description:
+      "MIT undergraduate studying computer science with experience in software engineering.",
+    url: "https://haileypan.com",
+    siteName: "Hailey Pan",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
