@@ -6,8 +6,8 @@ import Link from "next/link";
 export default function Navbar() {
   const [activeItem, setActiveItem] = useState("");
 
-  const leftNavItems = ["experience", "projects"];
-  const rightNavItems = ["writing", "contact"];
+  const leftNavItems = ["home", "experience"];
+  const rightNavItems = ["projects", "writing"];
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-[var(--color-background)] border-b border-[var(--color-border)] py-8 px-8 z-50">
@@ -17,7 +17,7 @@ export default function Navbar() {
             {leftNavItems.map((item, index) => (
               <Link
                 key={item}
-                href={`/${item}`}
+                href={item === "home" ? "/" : `/${item}`}
                 onClick={() => setActiveItem(item)}
                 className="relative px-4 py-2 group"
                 style={{
@@ -35,7 +35,7 @@ export default function Navbar() {
                   {item}
                 </span>
                 <span
-                  className={`absolute -inset-x-2 -inset-y-0.5 bg-[var(--color-border)] rounded -z-10 transition-opacity ${
+                  className={`absolute -inset-x-0.5 -inset-y-0.5 bg-[var(--color-border)] rounded -z-10 transition-opacity ${
                     activeItem === item
                       ? "opacity-40"
                       : "opacity-0 group-hover:opacity-30"
@@ -45,22 +45,17 @@ export default function Navbar() {
             ))}
           </div>
 
-          <Link
-            href="/"
-            style={{ margin: "0 3rem", textDecoration: "none" }}
-            onClick={() => setActiveItem("")}
-            className="group"
-          >
-            <h1 className="text-4xl font-light italic text-[var(--color-text-primary)] tracking-wide whitespace-nowrap font-['Playfair_Display',Georgia,serif] transition-opacity group-hover:opacity-70">
+          <div style={{ margin: "0 3rem" }}>
+            <h1 className="text-4xl font-light italic text-[var(--color-text-primary)] tracking-wide whitespace-nowrap font-['Playfair_Display',Georgia,serif]">
               Hailey Pan
             </h1>
-          </Link>
+          </div>
 
           <div className="flex items-center">
             {rightNavItems.map((item, index) => (
               <Link
                 key={item}
-                href={`/${item.toLowerCase()}`}
+                href={item === "home" ? "/" : `/${item.toLowerCase()}`}
                 onClick={() => setActiveItem(item)}
                 className="relative px-4 py-2 group"
                 style={{
@@ -78,7 +73,7 @@ export default function Navbar() {
                   {item}
                 </span>
                 <span
-                  className={`absolute -inset-x-2 -inset-y-0.5 bg-[var(--color-border)] rounded -z-10 transition-opacity ${
+                  className={`absolute -inset-x-0.5 -inset-y-0.5 bg-[var(--color-border)] rounded -z-10 transition-opacity ${
                     activeItem === item
                       ? "opacity-50"
                       : "opacity-0 group-hover:opacity-30"
@@ -90,21 +85,17 @@ export default function Navbar() {
         </div>
 
         <div className="md:hidden flex flex-col items-center space-y-6">
-          <Link
-            href="/"
-            className="no-underline group"
-            onClick={() => setActiveItem("")}
-          >
-            <h1 className="text-4xl font-light italic text-[var(--color-text-primary)] tracking-wide whitespace-nowrap font-['Playfair_Display',Georgia,serif] text-center transition-opacity group-hover:opacity-70">
+          <div>
+            <h1 className="text-4xl font-light italic text-[var(--color-text-primary)] tracking-wide whitespace-nowrap font-['Playfair_Display',Georgia,serif] text-center">
               Hailey Pan
             </h1>
-          </Link>
+          </div>
 
           <div className="flex justify-center gap-2 sm:gap-4 md:gap-6">
             {[...leftNavItems, ...rightNavItems].map((item) => (
               <Link
                 key={item}
-                href={`/${item.toLowerCase()}`}
+                href={item === "home" ? "/" : `/${item.toLowerCase()}`}
                 onClick={() => setActiveItem(item)}
                 className="relative px-4 py-2 no-underline group"
               >
@@ -118,7 +109,7 @@ export default function Navbar() {
                   {item}
                 </span>
                 <span
-                  className={`absolute -inset-x-2 -inset-y-0.5 bg-[var(--color-border)] rounded -z-10 transition-opacity ${
+                  className={`absolute -inset-x-0.5 -inset-y-0.5 bg-[var(--color-border)] rounded -z-10 transition-opacity ${
                     activeItem === item
                       ? "opacity-50"
                       : "opacity-0 group-hover:opacity-30"

@@ -16,7 +16,7 @@ export default function ProjectCard({
   image,
 }: ProjectCardProps) {
   return (
-    <div className="bg-[var(--color-border)]/40 rounded-lg overflow-hidden">
+    <div className="bg-[var(--color-border)]/40 rounded-lg overflow-hidden max-w-md">
       {image ? (
         <img src={image} alt={title} className="w-full h-48 object-cover" />
       ) : (
