@@ -10,7 +10,7 @@ export default function Navbar() {
   const rightNavItems = ["projects", "writing"];
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[var(--color-background)] border-b border-[var(--color-border)] py-8 px-8 z-50">
+    <nav className="fixed top-0 left-0 w-full bg-[var(--color-background)] border-b border-[var(--color-border)] py-4 md:py-8 px-8 z-50">
       <div>
         <div className="hidden md:flex items-center justify-center">
           <div className="flex items-center">
@@ -84,9 +84,9 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="md:hidden flex flex-col items-center space-y-6">
+        <div className="md:hidden flex flex-col items-center space-y-3">
           <div>
-            <h1 className="text-5xl font-light text-[var(--color-text-primary)] tracking-wide whitespace-nowrap font-['Dancing_Script',cursive] text-center">
+            <h1 className="text-4xl md:text-5xl font-light text-[var(--color-text-primary)] tracking-wide whitespace-nowrap font-['Dancing_Script',cursive] text-center">
               Hailey Pan
             </h1>
           </div>
@@ -97,10 +97,10 @@ export default function Navbar() {
                 key={item}
                 href={item === "home" ? "/" : `/${item.toLowerCase()}`}
                 onClick={() => setActiveItem(item)}
-                className="relative px-4 py-2 no-underline group"
+                className="relative px-2 py-1 no-underline group"
               >
                 <span
-                  className={`text-lg font-light tracking-wide transition-all font-serif ${
+                  className={`text-sm sm:text-base font-light tracking-wide transition-all font-serif ${
                     activeItem === item
                       ? "text-[var(--color-text-primary)]"
                       : "text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]"
