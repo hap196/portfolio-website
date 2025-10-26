@@ -11,13 +11,13 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-[var(--color-background)] border-b border-[var(--color-border)] py-8 px-8 z-50">
-      <div className="max-w-[1200px] mx-auto">
+      <div>
         <div className="hidden md:flex items-center justify-center">
           <div className="flex items-center">
             {leftNavItems.map((item, index) => (
               <Link
                 key={item}
-                href={`/${item.toLowerCase()}`}
+                href={`/${item}`}
                 onClick={() => setActiveItem(item)}
                 className="relative px-4 py-2 group"
                 style={{
@@ -37,7 +37,7 @@ export default function Navbar() {
                 <span
                   className={`absolute -inset-x-2 -inset-y-0.5 bg-[var(--color-border)] rounded -z-10 transition-opacity ${
                     activeItem === item
-                      ? "opacity-50"
+                      ? "opacity-40"
                       : "opacity-0 group-hover:opacity-30"
                   }`}
                 />

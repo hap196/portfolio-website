@@ -1,0 +1,64 @@
+{
+  "ongoing": [
+    {
+      "title": "YC IAP Program",
+      "description": "Building AI agents to help businesses automate data analysis.",
+      "link": "",
+      "image": ""
+    },
+    {
+      "title": "MIT Clubs",
+      "description": "Developing a web app that helps MIT students discover clubs and track recruitment deadlines. Previously, as the team lead of this project, I also managed weekly meetings, and scoped out timeline and features.",
+      "link": "https://mitclubs.com/",
+      "github": "https://github.com/appdev-at-mit/mit-clubs",
+      "image": "/projects/mitclubs.png"
+    },
+    {
+      "title": "MapIT",
+      "description": "Working on a web app that helps MIT students navigate campus and find event locations. Previously, as the team lead of this project, I also managed weekly meetings, and scoped out timeline and features.",
+      "link": "https://mitmapit.org/",
+      "image": "/projects/mapit.png"
+    },
+    {
+      "title": "AppDev@MIT",
+      "description": "Founded and co-led a community of 40+ students dedicated to building software at MIT.",
+      "link": "https://www.mitappdev.com/",
+      "github": "https://github.com/appdev-at-mit/appdev-site",
+      "image": "/projects/appdev.png"
+    },
+    {
+      "title": "Weekend Hacking",
+      "description": "Competing in hackathons, including HackPrinceton, Hack@Brown, and JP Morgan Chase's Code For Good.",
+      "link": "https://devpost.com/hap196",
+      "image": "/projects/hackathon.png"
+    }
+  ],
+  "previous": [
+    {
+      "title": "Science Writer @ The Tech",
+      "description": "Covered stories about science and technology for MIT's independent student newspaper.",
+      "link": "https://thetech.com/authors/hailey-pan",
+      "image": "/projects/thetech.png"
+    },
+    {
+      "title": "Y&Z Ventures",
+      "description": "Designed and built a landing page for Y&Z Ventures, a Los Angeles-based fund that invests on behalf of professionals and private foundations.",
+      "link": "https://www.yzventures.vc/",
+      "image": "/projects/yz-ventures.png"
+    },
+    {
+      "title": "SneakIn",
+      "description": "As a part of AI@MIT Labs, I worked with a team to build a web app to predict prices of items in the StockX marketplace. I was responsible for training the neural network, which achieved 95% accuracy",
+      "link": "",
+      "github": "https://github.com/hap196/sneakIn",
+      "image": "/projects/sneakin.png"
+    },
+    {
+      "title": "Folio",
+      "description": "Built an iOS app that uses an LLM to help high school students build their portfolio for college applications.",
+      "link": "",
+      "github": "https://github.com/hap196/folio-app",
+      "image": "/projects/folio.png"
+    }
+  ]
+}
