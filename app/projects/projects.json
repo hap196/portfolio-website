@@ -48,7 +48,7 @@
     },
     {
       "title": "SneakIn",
-      "description": "As a part of AI@MIT Labs, I worked with a team to build a web app to predict prices of items in the StockX marketplace. I was responsible for training the neural network, which achieved 95% accuracy",
+      "description": "As a part of AI@MIT Labs, I worked with a team to build a web app to predict prices of items in the StockX marketplace. I was responsible for training the neural network, which achieved 95% accuracy.",
       "link": "",
       "github": "https://github.com/hap196/sneakIn",
       "image": "/projects/sneakin.png"
