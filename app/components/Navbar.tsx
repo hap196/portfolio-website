@@ -46,7 +46,7 @@ export default function Navbar() {
           </div>
 
           <div style={{ margin: "0 3rem" }}>
-            <h1 className="text-4xl font-light italic text-[var(--color-text-primary)] tracking-wide whitespace-nowrap font-['Playfair_Display',Georgia,serif]">
+            <h1 className="text-5xl font-light text-[var(--color-text-primary)] tracking-wide whitespace-nowrap font-['Dancing_Script',cursive]">
               Hailey Pan
             </h1>
           </div>
@@ -86,7 +86,7 @@ export default function Navbar() {
 
         <div className="md:hidden flex flex-col items-center space-y-6">
           <div>
-            <h1 className="text-4xl font-light italic text-[var(--color-text-primary)] tracking-wide whitespace-nowrap font-['Playfair_Display',Georgia,serif] text-center">
+            <h1 className="text-5xl font-light text-[var(--color-text-primary)] tracking-wide whitespace-nowrap font-['Dancing_Script',cursive] text-center">
               Hailey Pan
             </h1>
           </div>
