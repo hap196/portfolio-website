@@ -1,5 +1,17 @@
 import Footer from "../components/Footer";
 import experiencesData from "./experiences.json";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Experience",
+  description:
+    "Experience of Hailey Pan, including internships, research positions, and leadership roles.",
+  keywords: [
+    "Hailey Pan",
+    "Hailey Pan MIT",
+    "Hailey Pan experience",
+  ],
+};
 
 export default function Experience() {
   return (

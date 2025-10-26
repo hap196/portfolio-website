@@ -1,4 +1,12 @@
 import Footer from "../components/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Writing",
+  description:
+    "Writing by Hailey Pan, including random thoughts and reflections.",
+  keywords: ["Hailey Pan", "Hailey Pan MIT", "Hailey Pan writing"],
+};
 
 export default function Writing() {
   return (

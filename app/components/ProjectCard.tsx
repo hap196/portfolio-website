@@ -1,4 +1,5 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import Image from "next/image";
 
 interface ProjectCardProps {
   title: string;
@@ -26,7 +27,13 @@ export default function ProjectCard({
         />
       )}
       {image ? (
-        <img src={image} alt={title} className="w-full h-48 object-cover" />
+        <Image
+          src={image}
+          alt={`${title} project image`}
+          width={400}
+          height={192}
+          className="w-full h-48 object-cover"
+        />
       ) : (
         <div className="w-full h-48 bg-[var(--color-border)]/60 flex items-center justify-center">
           <span className="text-sm text-[var(--color-text-secondary)] font-serif">

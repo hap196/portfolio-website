@@ -1,6 +1,14 @@
 import Footer from "../components/Footer";
 import ProjectCard from "../components/ProjectCard";
 import projectsData from "./projects.json";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "Software engineering projects by Hailey Pan including web applications, AI tools, and open source contributions.",
+  keywords: ["Hailey Pan", "Hailey Pan MIT", "Hailey Pan projects"],
+};
 
 export default function Projects() {
   return (

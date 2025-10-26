@@ -4,23 +4,41 @@ import Navbar from "./components/Navbar";
 import { ThemeProvider } from "./context/ThemeContext";
 
 export const metadata: Metadata = {
-  title: "Hailey Pan",
+  title: {
+    default: "Hailey Pan",
+    template: "%s | Hailey Pan",
+  },
   description:
-    "MIT undergraduate studying computer science with experience in software engineering",
+    "MIT undergraduate studying computer science with experience in software engineering at Apple and TikTok. Passionate about AI, startups, web and mobile app development, and building communities.",
   keywords: [
     "Hailey Pan",
-    "MIT",
-    "computer science",
-    "software engineer",
-    "AI",
-    "AppDev@MIT",
+    "Hailey Pan MIT",
+    "Hailey Pan computer science",
+    "Hailey Pan software engineer",
+    "Hailey Pan AppDev@MIT",
+    "Hailey Pan AI@MIT",
   ],
   authors: [{ name: "Hailey Pan" }],
   creator: "Hailey Pan",
+  metadataBase: new URL("https://haileypan.com"),
+  alternates: {
+    canonical: "https://haileypan.com",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     title: "Hailey Pan",
     description:
-      "MIT undergraduate studying computer science with experience in software engineering.",
+      "MIT undergraduate studying computer science with experience in software engineering at Apple and TikTok. Passionate about AI, web development, and building meaningful communities.",
     url: "https://haileypan.com",
     siteName: "Hailey Pan",
     type: "website",
