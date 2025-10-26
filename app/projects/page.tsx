@@ -35,7 +35,6 @@ export default function Projects() {
               key={index}
               title={project.title}
               description={project.description}
-              tech={project.tech}
               link={project.link}
               github={project.github}
               image={project.image}
