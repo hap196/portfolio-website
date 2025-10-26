@@ -3,11 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --color-background: #E8DCC4;
-  --color-border: #C4B5A0;
+  --color-background: #F5E8E6;
+  --color-border: #E8C6C2;
   --color-text-primary: #2B2820;
   --color-text-secondary: #5A5247;
-  --color-accent: #C4B5A0;
+  --color-accent: #D4AAA5;
 }
 
 [data-theme="dark"] {
