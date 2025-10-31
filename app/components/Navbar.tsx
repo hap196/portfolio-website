@@ -86,12 +86,12 @@ export default function Navbar() {
 
         <div className="md:hidden flex flex-col items-center space-y-3">
           <div>
-            <h1 className="text-4xl md:text-5xl font-light text-[var(--color-text-primary)] tracking-wide whitespace-nowrap font-['Dancing_Script',cursive] text-center">
+            <h1 className="text-4xl font-light text-[var(--color-text-primary)] tracking-wide whitespace-nowrap font-['Dancing_Script',cursive] text-center">
               Hailey Pan
             </h1>
           </div>
 
-          <div className="flex justify-center gap-2 sm:gap-4 md:gap-6">
+          <div className="flex justify-center gap-2 sm:gap-4">
             {[...leftNavItems, ...rightNavItems].map((item) => (
               <Link
                 key={item}

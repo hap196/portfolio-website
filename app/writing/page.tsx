@@ -11,7 +11,7 @@ export default function Writing() {
   return (
     <main className="min-h-screen bg-[var(--color-background)] pt-28 flex flex-col">
       <div className="max-w-3xl container mx-auto px-8 py-12 flex-grow">
-        <h1 className="text-3xl md:text-4xl font-light text-[var(--color-text-primary)] font-serif mb-12 text-center md:text-left">
+        <h1 className="text-2xl md:text-3xl font-light text-[var(--color-text-primary)] font-serif mb-6 text-center md:text-left">
           Blog
         </h1>
 

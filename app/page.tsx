@@ -3,9 +3,9 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[var(--color-background)] pt-28 md:pt-28 flex flex-col">
-      <div className="max-w-3xl px-10 container mx-auto px-8 py-12 flex-grow">
-        <h1 className="text-3xl font-light text-[var(--color-text-primary)] font-serif mb-6">Hi, I'm Hailey!</h1>
+    <main className="min-h-screen bg-[var(--color-background)] pt-28 flex flex-col">
+      <div className="max-w-3xl container mx-auto px-8 py-12 flex-grow">
+        <h1 className="text-2xl md:text-3xl font-light text-[var(--color-text-primary)] font-serif mb-6">Hi, I'm Hailey!</h1>
         <p className="text-lg text-[var(--color-text-primary)] font-serif">
           I'm an undergraduate computer science student at MIT. I'm excited
           about building and shipping software that solves real problems people

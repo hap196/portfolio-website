@@ -4,8 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Experience",
-  description:
-    "Experience of Hailey Pan, including internships, research positions, and leadership roles.",
+  description: "Internships, research positions, and leadership roles.",
   keywords: [
     "Hailey Pan",
     "Hailey Pan MIT",
@@ -15,9 +14,9 @@ export const metadata: Metadata = {
 
 export default function Experience() {
   return (
-    <main className="min-h-screen bg-[var(--color-background)] pt-28 md:pt-28 flex flex-col">
-      <div className="max-w-3xl px-10 container mx-auto px-8 py-12 flex-grow">
-        <h1 className="text-3xl md:text-4xl font-light text-[var(--color-text-primary)] font-serif mb-12 text-center md:text-left">
+    <main className="min-h-screen bg-[var(--color-background)] pt-28 flex flex-col">
+      <div className="max-w-3xl container mx-auto px-8 py-12 flex-grow">
+        <h1 className="text-2xl md:text-3xl font-light text-[var(--color-text-primary)] font-serif mb-6 text-center md:text-left">
           Experience
         </h1>
 
