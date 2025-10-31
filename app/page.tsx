@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[var(--color-background)] pt-28 md:pt-28 flex flex-col">
       <div className="max-w-3xl px-10 container mx-auto px-8 py-12 flex-grow">
-        <h1 className="text-4xl font-light text-[var(--color-text-primary)] font-serif"></h1>
+        <h1 className="text-3xl font-light text-[var(--color-text-primary)] font-serif mb-6">Hi, I'm Hailey!</h1>
         <p className="text-lg text-[var(--color-text-primary)] font-serif">
-          Hi! I'm an undergraduate computer science student at MIT. I'm excited
+          I'm an undergraduate computer science student at MIT. I'm excited
           about building and shipping software that solves real problems people
           face. At the same time, I greatly enjoy{" "}
           <a
