@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
   --background: #ffffff;
@@ -43,6 +44,42 @@ body {
 @layer base {
   a {
     text-decoration: none;
+  }
+  
+  .prose {
+    --tw-prose-body: var(--color-text-primary);
+    --tw-prose-headings: var(--color-text-primary);
+    --tw-prose-links: var(--color-text-secondary);
+    --tw-prose-bold: var(--color-text-primary);
+    --tw-prose-code: var(--color-text-primary);
+  }
+  
+  .prose p,
+  .prose li {
+    line-height: 1.5;
+  }
+  
+  .prose p {
+    margin-bottom: 1rem;
+  }
+  
+  .prose ul,
+  .prose ol {
+    margin-bottom: 1rem;
+  }
+  
+  .prose li {
+    margin-bottom: 0.25rem;
+  }
+  
+  .prose h1,
+  .prose h2,
+  .prose h3 {
+    margin-bottom: 0.75rem;
+  }
+  
+  .prose a:hover {
+    color: var(--color-accent);
   }
 }
 

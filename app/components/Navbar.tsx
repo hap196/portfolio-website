@@ -7,7 +7,7 @@ export default function Navbar() {
   const [activeItem, setActiveItem] = useState("");
 
   const leftNavItems = ["home", "experience"];
-  const rightNavItems = ["projects", "writing"];
+  const rightNavItems = ["projects", "blog"];
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-[var(--color-background)] border-b border-[var(--color-border)] py-4 md:py-8 px-8 z-50">
