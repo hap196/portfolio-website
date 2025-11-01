@@ -81,5 +81,21 @@ body {
   .prose a:hover {
     color: var(--color-accent);
   }
+  
+  [data-theme="dark"] .prose {
+    color: var(--color-text-primary);
+  }
+  
+  [data-theme="dark"] .prose p,
+  [data-theme="dark"] .prose li,
+  [data-theme="dark"] .prose h1,
+  [data-theme="dark"] .prose h2,
+  [data-theme="dark"] .prose h3 {
+    color: var(--color-text-primary);
+  }
+  
+  [data-theme="dark"] .prose a {
+    color: var(--color-text-secondary);
+  }
 }
 
