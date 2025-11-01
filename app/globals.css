@@ -4,11 +4,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --color-background: #F5E8E6;
-  --color-border: #E8C6C2;
-  --color-text-primary: #2B2820;
-  --color-text-secondary: #5A5247;
-  --color-accent: #D4AAA5;
+  --color-background: #f5e8e6;
+  --color-border: #e8c6c2;
+  --color-text-primary: #2b2820;
+  --color-text-secondary: #5a5247;
+  --color-accent: #d4aaa5;
 }
 
 [data-theme="dark"] {
@@ -45,7 +45,7 @@ body {
   a {
     text-decoration: none;
   }
-  
+
   .prose {
     --tw-prose-body: var(--color-text-primary);
     --tw-prose-headings: var(--color-text-primary);
@@ -53,49 +53,48 @@ body {
     --tw-prose-bold: var(--color-text-primary);
     --tw-prose-code: var(--color-text-primary);
   }
-  
+
   .prose p,
   .prose li {
     line-height: 1.5;
   }
-  
+
   .prose p {
     margin-bottom: 1rem;
   }
-  
+
   .prose ul,
   .prose ol {
     margin-bottom: 1rem;
   }
-  
+
   .prose li {
     margin-bottom: 0.25rem;
   }
-  
+
   .prose h1,
   .prose h2,
   .prose h3 {
     margin-bottom: 0.75rem;
   }
-  
+
   .prose a:hover {
     color: var(--color-accent);
   }
-  
-  [data-theme="dark"] .prose {
-    color: var(--color-text-primary);
-  }
-  
-  [data-theme="dark"] .prose p,
-  [data-theme="dark"] .prose li,
-  [data-theme="dark"] .prose h1,
-  [data-theme="dark"] .prose h2,
-  [data-theme="dark"] .prose h3 {
-    color: var(--color-text-primary);
-  }
-  
-  [data-theme="dark"] .prose a {
-    color: var(--color-text-secondary);
-  }
 }
 
+.prose {
+  color: var(--color-text-primary);
+}
+
+.prose p,
+.prose li,
+.prose h1,
+.prose h2,
+.prose h3 {
+  color: var(--color-text-primary);
+}
+
+.prose a {
+  color: var(--color-text-secondary);
+}
