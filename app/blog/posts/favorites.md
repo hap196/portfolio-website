@@ -16,6 +16,7 @@ books
 - _Stories of Your Life_ and Others by Ted Chiang
 - _Alexander Hamilton_ by Ron Chernow
 - _The Three-Body Problem_ by Cixin Liu
+- _Night_ by Elie Wiesel
 - _Catch-22_ by Joseph Heller
 
 places
