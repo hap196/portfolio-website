@@ -13,7 +13,9 @@ export default function BlogCard({
   excerpt,
   slug,
 }: BlogCardProps) {
-  const formattedDate = new Date(date).toLocaleDateString("en-US", {
+  const [year, month, day] = date.split("-").map(Number);
+  const localDate = new Date(year, month - 1, day);
+  const formattedDate = localDate.toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -21,9 +23,9 @@ export default function BlogCard({
 
   return (
     <Link href={`/blog/${slug}`} className="block group">
-      <div className="border border-[var(--color-border)] rounded-lg p-6 transition-all hover:border-[var(--color-accent)] hover:shadow-md">
+      <div className="border border-[var(--color-border)] rounded-lg px-6 py-5 transition-all hover:border-[var(--color-accent)] hover:shadow-md">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
-          <h2 className="text-2xl font-light text-[var(--color-text-primary)] font-serif group-hover:text-[var(--color-accent)] transition-colors">
+          <h2 className="text-xl font-light text-[var(--color-text-primary)] font-serif group-hover:text-[var(--color-accent)] transition-colors">
             {title}
           </h2>
           <time className="text-sm text-[var(--color-text-secondary)] font-serif whitespace-nowrap">
