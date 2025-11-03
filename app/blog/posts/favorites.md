@@ -8,8 +8,8 @@ slug: "favorites"
 films
 - _Oppenheimer_
 - _Past Lives_
-- _A Silent Voice_
 - _La La Land_
+- _A Silent Voice_
 - _Avengers: Endgame_
 - _The Wonderful Story of Henry Sugar_
 
