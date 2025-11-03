@@ -13,11 +13,11 @@ films
 - _Avengers: Endgame_
 
 books
-- _Stories of Your Life_ and Others by Ted Chiang
-- _Alexander Hamilton_ by Ron Chernow
+- _Stories of Your Life and Others_ by Ted Chiang
+- _Exhalation_ by Ted Chiang
 - _The Three-Body Problem_ by Cixin Liu
+- _Alexander Hamilton_ by Ron Chernow
 - _Night_ by Elie Wiesel
-- _Catch-22_ by Joseph Heller
 
 places
 - Taipei, Taiwan
