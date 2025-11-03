@@ -11,6 +11,7 @@ films
 - _A Silent Voice_
 - _La La Land_
 - _Avengers: Endgame_
+- _The Wonderful Story of Henry Sugar_
 
 books
 - _Stories of Your Life and Others_ by Ted Chiang
