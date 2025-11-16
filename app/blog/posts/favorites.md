@@ -8,16 +8,17 @@ slug: "favorites"
 films
 - _Oppenheimer_
 - _Past Lives_
-- _A Silent Voice_
+- _Everything Everywhere All at Once_
 - _La La Land_
 - _Avengers: Endgame_
+- _The Wonderful Story of Henry Sugar_
 
 books
-- _Stories of Your Life_ and Others by Ted Chiang
-- _Alexander Hamilton_ by Ron Chernow
+- _Stories of Your Life and Others_ by Ted Chiang
+- _Exhalation_ by Ted Chiang
 - _The Three-Body Problem_ by Cixin Liu
+- _Alexander Hamilton_ by Ron Chernow
 - _Night_ by Elie Wiesel
-- _Catch-22_ by Joseph Heller
 
 places
 - Taipei, Taiwan
