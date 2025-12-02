@@ -20,9 +20,10 @@ books
 - _Alexander Hamilton_ by Ron Chernow
 - _Night_ by Elie Wiesel
 
-places
-- Taipei, Taiwan
-- Jungfraujoch, Switzerland
-- Giverny, France
-- Kyoto, Japan
-- Yosemite National Park, California
+blogs
+- bookbear express (ava)
+- Wait But Why
+- The Pragmatic Engineer
+- Sherry Ning
+
+please send me more recs :)
