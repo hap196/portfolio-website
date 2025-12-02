@@ -1,5 +1,6 @@
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin, FaGithub, FaSpotify, FaGoodreads } from "react-icons/fa";
+import { SiSubstack } from "react-icons/si";
 
 export default function Socials() {
   return (
@@ -47,6 +48,15 @@ export default function Socials() {
         rel="noopener noreferrer"
       >
         <FaGoodreads className="w-5 h-5" />
+      </a>
+
+      <a
+        href="https://substack.com/@haileyypan"
+        className="text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <SiSubstack className="w-4 h-4" />
       </a>
     </div>
   );
